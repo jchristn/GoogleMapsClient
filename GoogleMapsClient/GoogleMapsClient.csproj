@@ -2,6 +2,18 @@
 
   <PropertyGroup>
     <TargetFrameworks>netstandard2.1;net461</TargetFrameworks>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Joel Christner</Authors>
+    <Company>Joel Christner</Company>
+    <Description>I needed a simple way to parse addresses and resolve coordinates to an address.  Plug in a Google Maps API key and you're all set.</Description>
+    <Copyright>(c)2020 Joel Christner</Copyright>
+    <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
+    <PackageProjectUrl>https://github.com/jchristn/GoogleMapsClient</PackageProjectUrl>
+    <PackageIconUrl>https://raw.githubusercontent.com/jchristn/GoogleMapsClient/master/Assets/icon.ico</PackageIconUrl>
+    <RepositoryUrl>https://github.com/jchristn/GoogleMapsClient</RepositoryUrl>
+    <RepositoryType>Github</RepositoryType>
+    <PackageTags>google maps coordinates address map coordinate</PackageTags>
+    <PackageReleaseNotes>Initial release</PackageReleaseNotes>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|netstandard2.1|AnyCPU'">
@@ -10,6 +22,13 @@
 
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="LICENSE.md">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>

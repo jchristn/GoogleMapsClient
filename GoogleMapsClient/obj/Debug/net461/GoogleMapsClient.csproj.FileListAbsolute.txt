@@ -6,5 +6,4 @@ c:\code\google\GoogleMapsClient\GoogleMapsClient\obj\Debug\net461\GoogleMapsClie
 c:\code\google\GoogleMapsClient\GoogleMapsClient\obj\Debug\net461\GoogleMapsClient.dll
 c:\code\google\GoogleMapsClient\GoogleMapsClient\obj\Debug\net461\GoogleMapsClient.pdb
 c:\code\google\GoogleMapsClient\GoogleMapsClient\bin\Debug\net461\Newtonsoft.Json.dll
-c:\code\google\GoogleMapsClient\GoogleMapsClient\bin\Debug\net461\RestWrapper.dll
 c:\code\google\GoogleMapsClient\GoogleMapsClient\obj\Debug\net461\GoogleMapsClient.csproj.CopyComplete

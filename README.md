@@ -1,6 +1,6 @@
 # GoogleMapsClient
  
-![alt tag](https://github.com/jchristn/GoogleMapsClient/blob/master/assets/icon.png)
+![alt tag](https://raw.githubusercontent.com/jchristn/GoogleMapsClient/master/Assets/icon.ico)
 
 I needed a simple way to parse addresses and resolve coordinates to an address.  Plug in a Google Maps API key and you're all set.
 

@@ -1,0 +1,8 @@
+c:\code\google\GoogleMapsClient\GoogleMapsClient\bin\Release\net461\GoogleMapsClient.dll
+c:\code\google\GoogleMapsClient\GoogleMapsClient\bin\Release\net461\GoogleMapsClient.pdb
+c:\code\google\GoogleMapsClient\GoogleMapsClient\bin\Release\net461\Newtonsoft.Json.dll
+c:\code\google\GoogleMapsClient\GoogleMapsClient\obj\Release\net461\GoogleMapsClient.AssemblyInfoInputs.cache
+c:\code\google\GoogleMapsClient\GoogleMapsClient\obj\Release\net461\GoogleMapsClient.AssemblyInfo.cs
+c:\code\google\GoogleMapsClient\GoogleMapsClient\obj\Release\net461\GoogleMapsClient.csproj.CopyComplete
+c:\code\google\GoogleMapsClient\GoogleMapsClient\obj\Release\net461\GoogleMapsClient.dll
+c:\code\google\GoogleMapsClient\GoogleMapsClient\obj\Release\net461\GoogleMapsClient.pdb
