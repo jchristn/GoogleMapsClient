@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Net; 
 using Newtonsoft.Json;
@@ -98,6 +99,57 @@ namespace GoogleMapsClient
             Logger?.Invoke(_Header + "QueryAddress " + address);
             GoogleMapsResponse resp = GetGoogleMapsResponse(url);
             return new Address(resp);
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="latitude">Latitude.</param>
+        /// <param name="longitude">Longitude.</param>
+        /// <param name="timestamp">Timestamp for which the local timestamp should be retrieved.</param>
+        /// <param name="timezone">Timezone string.</param>
+        /// <returns>Local timestamp.</returns>
+        public DateTime LocalTimestamp(double latitude, double longitude, DateTime timestamp, out string timezone)
+        {
+            timezone = "Universal Time Coordinated (UTC)";
+
+            timestamp = timestamp.ToUniversalTime();
+            DateTime origin = new DateTime(1970, 1, 1, 0, 0, 0, 0);
+            TimeSpan diff = timestamp.ToUniversalTime() - origin;
+            double ts = Math.Floor(diff.TotalSeconds);
+
+            string url = "https://maps.googleapis.com/maps/api/timezone/json?location=" + latitude + "," + longitude + "&key=" + _ApiKey + "&timestamp=" + ts;
+
+            using (WebClient wc = new WebClient())
+            {
+                string result = wc.DownloadString(new Uri(url));
+
+                Dictionary<string, object> data = Common.DeserializeJson<Dictionary<string, object>>(result);
+
+                double dstOffset = Convert.ToDouble(data["dstOffset"]);
+                double rawOffset = Convert.ToDouble(data["rawOffset"]);
+                timezone = data["timeZoneName"].ToString();
+
+                return timestamp.AddSeconds(dstOffset + rawOffset);
+            } 
+        }
+
+        /// <summary>
+        /// Retrieve the local timestamp for a given 
+        /// </summary>
+        /// <param name="address"></param>
+        /// <param name="timestamp">Timestamp for which the local timestamp should be retrieved.</param>
+        /// <param name="timezone">Timezone string.</param>
+        /// <returns>Local timestamp.</returns>
+        public DateTime LocalTimestamp(string address, DateTime timestamp, out string timezone)
+        {
+            if (String.IsNullOrEmpty(address)) throw new ArgumentNullException(nameof(address));
+            Address addr = QueryAddress(address);
+            return LocalTimestamp(
+                Convert.ToDouble(addr.Latitude), 
+                Convert.ToDouble(addr.Longitude), 
+                timestamp, 
+                out timezone);
         }
 
         #endregion

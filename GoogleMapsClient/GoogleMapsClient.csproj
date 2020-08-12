@@ -13,7 +13,8 @@
     <RepositoryUrl>https://github.com/jchristn/GoogleMapsClient</RepositoryUrl>
     <RepositoryType>Github</RepositoryType>
     <PackageTags>google maps coordinates address map coordinate</PackageTags>
-    <PackageReleaseNotes>Initial release</PackageReleaseNotes>
+    <PackageReleaseNotes>Timestamp API</PackageReleaseNotes>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|netstandard2.1|AnyCPU'">

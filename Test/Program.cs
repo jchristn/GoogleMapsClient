@@ -39,6 +39,26 @@ namespace Test
                 {
                     Menu();
                 }
+                else if (userInput.StartsWith("ts "))
+                {
+                    string timestampStr = userInput.Substring(2);
+                    DateTime ts = DateTime.Now;
+                    string tz = null;
+
+                    if (timestampStr.Contains(","))
+                    {
+                        string[] parts = timestampStr.Split(new char[] { ',' }, 2);
+                        double latitude = Convert.ToDouble(parts[0]);
+                        double longitude = Convert.ToDouble(parts[1]);
+                        ts = _GoogleMaps.LocalTimestamp(latitude, longitude, DateTime.Now, out tz);
+                    }
+                    else
+                    {
+                        ts = _GoogleMaps.LocalTimestamp(timestampStr, DateTime.Now, out tz);
+                    }
+
+                    Console.WriteLine(tz + ": " + ts.ToString("s"));
+                }
                 else
                 {
                     Address addr = null;
@@ -52,7 +72,7 @@ namespace Test
                     }
                     else
                     {
-                        addr = _GoogleMaps.QueryAddress(userInput); 
+                        addr = _GoogleMaps.QueryAddress(userInput);
                     }
 
                     Console.WriteLine(SerializeJson(addr));
@@ -63,11 +83,13 @@ namespace Test
         static void Menu()
         {
             Console.WriteLine("--- Available Commands ---");
-            Console.WriteLine("  q           Quit");
-            Console.WriteLine("  ?           Help, this menu");
-            Console.WriteLine("  cls         Clear the screen");
-            Console.WriteLine("  [lat,lng]   Process coordinates");
-            Console.WriteLine("  [address]   Process address");
+            Console.WriteLine("  q              Quit");
+            Console.WriteLine("  ?              Help, this menu");
+            Console.WriteLine("  cls            Clear the screen");
+            Console.WriteLine("  ts [address]   Generate timestamp for a specific address");
+            Console.WriteLine("  ts [lat,lng]   Generate timestamp for specific coordinates");
+            Console.WriteLine("  [lat,lng]      Process coordinates");
+            Console.WriteLine("  [address]      Process address");
             Console.WriteLine("");
         }
 

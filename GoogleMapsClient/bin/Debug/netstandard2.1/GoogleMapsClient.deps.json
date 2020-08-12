@@ -7,7 +7,7 @@
   "targets": {
     ".NETStandard,Version=v2.1": {},
     ".NETStandard,Version=v2.1/": {
-      "GoogleMapsClient/1.0.0": {
+      "GoogleMapsClient/1.0.1": {
         "dependencies": {
           "Newtonsoft.Json": "12.0.3"
         },
@@ -26,7 +26,7 @@
     }
   },
   "libraries": {
-    "GoogleMapsClient/1.0.0": {
+    "GoogleMapsClient/1.0.1": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -167,6 +167,25 @@
             <param name="address">Address.</param>
             <returns>Address details.</returns>
         </member>
+        <member name="M:GoogleMapsClient.GoogleMaps.LocalTimestamp(System.Double,System.Double,System.DateTime,System.String@)">
+            <summary>
+            
+            </summary>
+            <param name="latitude">Latitude.</param>
+            <param name="longitude">Longitude.</param>
+            <param name="timestamp">Timestamp for which the local timestamp should be retrieved.</param>
+            <param name="timezone">Timezone string.</param>
+            <returns>Local timestamp.</returns>
+        </member>
+        <member name="M:GoogleMapsClient.GoogleMaps.LocalTimestamp(System.String,System.DateTime,System.String@)">
+            <summary>
+            Retrieve the local timestamp for a given 
+            </summary>
+            <param name="address"></param>
+            <param name="timestamp">Timestamp for which the local timestamp should be retrieved.</param>
+            <param name="timezone">Timezone string.</param>
+            <returns>Local timestamp.</returns>
+        </member>
         <member name="T:GoogleMapsClient.GoogleMapsResponse">
             <summary>
             Response from Google Maps API endpoint.
