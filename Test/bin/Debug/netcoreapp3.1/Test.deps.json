@@ -1,0 +1,72 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Test/1.0.0": {
+        "dependencies": {
+          "GoogleMapsClient": "1.0.0"
+        },
+        "runtime": {
+          "Test.dll": {}
+        }
+      },
+      "Newtonsoft.Json/12.0.2": {
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "12.0.0.0",
+            "fileVersion": "12.0.2.23222"
+          }
+        }
+      },
+      "RestWrapper/2.1.4.1": {
+        "dependencies": {
+          "Newtonsoft.Json": "12.0.2"
+        },
+        "runtime": {
+          "lib/netstandard2.0/RestWrapper.dll": {
+            "assemblyVersion": "2.1.4.1",
+            "fileVersion": "2.1.4.1"
+          }
+        }
+      },
+      "GoogleMapsClient/1.0.0": {
+        "dependencies": {
+          "RestWrapper": "2.1.4.1"
+        },
+        "runtime": {
+          "GoogleMapsClient.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Test/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Newtonsoft.Json/12.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-rTK0s2EKlfHsQsH6Yx2smvcTCeyoDNgCW7FEYyV01drPlh2T243PR2DiDXqtC5N4GDm4Ma/lkxfW5a/4793vbA==",
+      "path": "newtonsoft.json/12.0.2",
+      "hashPath": "newtonsoft.json.12.0.2.nupkg.sha512"
+    },
+    "RestWrapper/2.1.4.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-gJQr7Va37wTjClS+/Q4NWaM3HD5O/fPx/xPBzdgL/l85lG1ei6ALzLgc/6zVd1Te1Wveg3KHSgpzd4JaKyTGzQ==",
+      "path": "restwrapper/2.1.4.1",
+      "hashPath": "restwrapper.2.1.4.1.nupkg.sha512"
+    },
+    "GoogleMapsClient/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
