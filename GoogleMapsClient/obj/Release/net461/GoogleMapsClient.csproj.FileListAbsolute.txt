@@ -6,3 +6,6 @@ c:\code\google\GoogleMapsClient\GoogleMapsClient\obj\Release\net461\GoogleMapsCl
 c:\code\google\GoogleMapsClient\GoogleMapsClient\obj\Release\net461\GoogleMapsClient.csproj.CopyComplete
 c:\code\google\GoogleMapsClient\GoogleMapsClient\obj\Release\net461\GoogleMapsClient.dll
 c:\code\google\GoogleMapsClient\GoogleMapsClient\obj\Release\net461\GoogleMapsClient.pdb
+C:\Code\Google\GoogleMapsClient\GoogleMapsClient\obj\Release\net461\GoogleMapsClient.csproj.AssemblyReference.cache
+C:\Code\Google\GoogleMapsClient\GoogleMapsClient\obj\Release\net461\GoogleMapsClient.GeneratedMSBuildEditorConfig.editorconfig
+C:\Code\Google\GoogleMapsClient\GoogleMapsClient\obj\Release\net461\GoogleMapsClient.csproj.CoreCompileInputs.cache

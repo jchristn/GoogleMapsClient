@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>netstandard2.1;net461</TargetFrameworks>
+    <TargetFrameworks>netstandard2.1;netcoreapp3.1;net461;net5.0;net6.0</TargetFrameworks>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Authors>Joel Christner</Authors>
     <Company>Joel Christner</Company>
@@ -13,8 +13,8 @@
     <RepositoryUrl>https://github.com/jchristn/GoogleMapsClient</RepositoryUrl>
     <RepositoryType>Github</RepositoryType>
     <PackageTags>google maps coordinates address map coordinate</PackageTags>
-    <PackageReleaseNotes>Timestamp API</PackageReleaseNotes>
-    <Version>1.0.1</Version>
+    <PackageReleaseNotes>.NET 6 support</PackageReleaseNotes>
+    <Version>1.0.1.1</Version>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|netstandard2.1|AnyCPU'">
@@ -22,7 +22,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
   </ItemGroup>
 
   <ItemGroup>

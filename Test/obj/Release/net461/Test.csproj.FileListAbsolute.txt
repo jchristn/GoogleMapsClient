@@ -4,9 +4,12 @@ c:\code\google\GoogleMapsClient\Test\bin\Release\net461\Test.pdb
 c:\code\google\GoogleMapsClient\Test\bin\Release\net461\Newtonsoft.Json.dll
 c:\code\google\GoogleMapsClient\Test\bin\Release\net461\GoogleMapsClient.dll
 c:\code\google\GoogleMapsClient\Test\bin\Release\net461\GoogleMapsClient.pdb
-c:\code\google\GoogleMapsClient\Test\obj\Release\net461\Test.csprojAssemblyReference.cache
 c:\code\google\GoogleMapsClient\Test\obj\Release\net461\Test.AssemblyInfoInputs.cache
 c:\code\google\GoogleMapsClient\Test\obj\Release\net461\Test.AssemblyInfo.cs
 c:\code\google\GoogleMapsClient\Test\obj\Release\net461\Test.csproj.CopyComplete
 c:\code\google\GoogleMapsClient\Test\obj\Release\net461\Test.exe
 c:\code\google\GoogleMapsClient\Test\obj\Release\net461\Test.pdb
+C:\Code\Google\GoogleMapsClient\Test\obj\Release\net461\Test.csproj.AssemblyReference.cache
+C:\Code\Google\GoogleMapsClient\Test\obj\Release\net461\Test.csproj.SuggestedBindingRedirects.cache
+C:\Code\Google\GoogleMapsClient\Test\obj\Release\net461\Test.GeneratedMSBuildEditorConfig.editorconfig
+C:\Code\Google\GoogleMapsClient\Test\obj\Release\net461\Test.csproj.CoreCompileInputs.cache

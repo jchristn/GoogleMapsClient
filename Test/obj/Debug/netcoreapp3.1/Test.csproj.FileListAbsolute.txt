@@ -4,7 +4,6 @@ c:\code\google\GoogleMapsClient\Test\bin\Debug\netcoreapp3.1\Test.runtimeconfig.
 c:\code\google\GoogleMapsClient\Test\bin\Debug\netcoreapp3.1\Test.runtimeconfig.dev.json
 c:\code\google\GoogleMapsClient\Test\bin\Debug\netcoreapp3.1\Test.dll
 c:\code\google\GoogleMapsClient\Test\bin\Debug\netcoreapp3.1\Test.pdb
-c:\code\google\GoogleMapsClient\Test\obj\Debug\netcoreapp3.1\Test.csprojAssemblyReference.cache
 c:\code\google\GoogleMapsClient\Test\obj\Debug\netcoreapp3.1\Test.AssemblyInfoInputs.cache
 c:\code\google\GoogleMapsClient\Test\obj\Debug\netcoreapp3.1\Test.AssemblyInfo.cs
 c:\code\google\GoogleMapsClient\Test\obj\Debug\netcoreapp3.1\Test.dll
@@ -13,5 +12,7 @@ c:\code\google\GoogleMapsClient\Test\obj\Debug\netcoreapp3.1\Test.genruntimeconf
 c:\code\google\GoogleMapsClient\Test\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 c:\code\google\GoogleMapsClient\Test\bin\Debug\netcoreapp3.1\GoogleMapsClient.dll
 c:\code\google\GoogleMapsClient\Test\bin\Debug\netcoreapp3.1\GoogleMapsClient.pdb
-c:\code\google\GoogleMapsClient\Test\bin\Debug\netcoreapp3.1\GoogleMapsClient.xml
 c:\code\google\GoogleMapsClient\Test\obj\Debug\netcoreapp3.1\Test.csproj.CopyComplete
+C:\Code\Google\GoogleMapsClient\Test\obj\Debug\netcoreapp3.1\Test.csproj.AssemblyReference.cache
+C:\Code\Google\GoogleMapsClient\Test\obj\Debug\netcoreapp3.1\Test.GeneratedMSBuildEditorConfig.editorconfig
+C:\Code\Google\GoogleMapsClient\Test\obj\Debug\netcoreapp3.1\Test.csproj.CoreCompileInputs.cache

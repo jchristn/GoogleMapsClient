@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>GoogleMapsClient</id>
+    <version>1.0.1.1</version>
+    <authors>Joel Christner</authors>
+    <license type="file">LICENSE.md</license>
+    <licenseUrl>https://aka.ms/deprecateLicenseUrl</licenseUrl>
+    <projectUrl>https://github.com/jchristn/GoogleMapsClient</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/jchristn/GoogleMapsClient/master/Assets/icon.ico</iconUrl>
+    <description>I needed a simple way to parse addresses and resolve coordinates to an address.  Plug in a Google Maps API key and you're all set.</description>
+    <releaseNotes>.NET 6 support</releaseNotes>
+    <copyright>(c)2020 Joel Christner</copyright>
+    <tags>google maps coordinates address map coordinate</tags>
+    <repository type="Github" url="https://github.com/jchristn/GoogleMapsClient" />
+    <dependencies>
+      <group targetFramework=".NETFramework4.6.1">
+        <dependency id="Newtonsoft.Json" version="12.0.3" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETCoreApp3.1">
+        <dependency id="Newtonsoft.Json" version="12.0.3" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="net5.0">
+        <dependency id="Newtonsoft.Json" version="12.0.3" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="net6.0">
+        <dependency id="Newtonsoft.Json" version="12.0.3" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETStandard2.1">
+        <dependency id="Newtonsoft.Json" version="12.0.3" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Code\Google\GoogleMapsClient\GoogleMapsClient\bin\Debug\net461\GoogleMapsClient.dll" target="lib\net461\GoogleMapsClient.dll" />
+    <file src="C:\Code\Google\GoogleMapsClient\GoogleMapsClient\bin\Debug\net5.0\GoogleMapsClient.dll" target="lib\net5.0\GoogleMapsClient.dll" />
+    <file src="C:\Code\Google\GoogleMapsClient\GoogleMapsClient\bin\Debug\net6.0\GoogleMapsClient.dll" target="lib\net6.0\GoogleMapsClient.dll" />
+    <file src="C:\Code\Google\GoogleMapsClient\GoogleMapsClient\bin\Debug\netcoreapp3.1\GoogleMapsClient.dll" target="lib\netcoreapp3.1\GoogleMapsClient.dll" />
+    <file src="C:\Code\Google\GoogleMapsClient\GoogleMapsClient\bin\Debug\netstandard2.1\GoogleMapsClient.dll" target="lib\netstandard2.1\GoogleMapsClient.dll" />
+    <file src="C:\Code\Google\GoogleMapsClient\GoogleMapsClient\bin\Debug\netstandard2.1\GoogleMapsClient.xml" target="lib\netstandard2.1\GoogleMapsClient.xml" />
+    <file src="C:\Code\Google\GoogleMapsClient\GoogleMapsClient\LICENSE.md" target="LICENSE.md" />
+  </files>
+</package>

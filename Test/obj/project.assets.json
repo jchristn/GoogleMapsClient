@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.1": {
-      "Newtonsoft.Json/12.0.3": {
+      "Newtonsoft.Json/13.0.1": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
@@ -11,11 +11,11 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
-      "GoogleMapsClient/1.0.1": {
+      "GoogleMapsClient/1.0.1.1": {
         "type": "project",
-        "framework": ".NETStandard,Version=v2.1",
+        "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
-          "Newtonsoft.Json": "12.0.3"
+          "Newtonsoft.Json": "13.0.1"
         },
         "compile": {
           "bin/placeholder/GoogleMapsClient.dll": {}
@@ -26,7 +26,7 @@
       }
     },
     ".NETCoreApp,Version=v3.1/win7-x86": {
-      "Newtonsoft.Json/12.0.3": {
+      "Newtonsoft.Json/13.0.1": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
@@ -35,11 +35,11 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
-      "GoogleMapsClient/1.0.1": {
+      "GoogleMapsClient/1.0.1.1": {
         "type": "project",
-        "framework": ".NETStandard,Version=v2.1",
+        "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
-          "Newtonsoft.Json": "12.0.3"
+          "Newtonsoft.Json": "13.0.1"
         },
         "compile": {
           "bin/placeholder/GoogleMapsClient.dll": {}
@@ -50,7 +50,7 @@
       }
     },
     ".NETFramework,Version=v4.6.1": {
-      "Newtonsoft.Json/12.0.3": {
+      "Newtonsoft.Json/13.0.1": {
         "type": "package",
         "compile": {
           "lib/net45/Newtonsoft.Json.dll": {}
@@ -59,11 +59,11 @@
           "lib/net45/Newtonsoft.Json.dll": {}
         }
       },
-      "GoogleMapsClient/1.0.1": {
+      "GoogleMapsClient/1.0.1.1": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.6.1",
         "dependencies": {
-          "Newtonsoft.Json": "12.0.3"
+          "Newtonsoft.Json": "13.0.1"
         },
         "compile": {
           "bin/placeholder/GoogleMapsClient.dll": {}
@@ -74,7 +74,7 @@
       }
     },
     ".NETFramework,Version=v4.6.1/win7-x86": {
-      "Newtonsoft.Json/12.0.3": {
+      "Newtonsoft.Json/13.0.1": {
         "type": "package",
         "compile": {
           "lib/net45/Newtonsoft.Json.dll": {}
@@ -83,11 +83,107 @@
           "lib/net45/Newtonsoft.Json.dll": {}
         }
       },
-      "GoogleMapsClient/1.0.1": {
+      "GoogleMapsClient/1.0.1.1": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.6.1",
         "dependencies": {
-          "Newtonsoft.Json": "12.0.3"
+          "Newtonsoft.Json": "13.0.1"
+        },
+        "compile": {
+          "bin/placeholder/GoogleMapsClient.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GoogleMapsClient.dll": {}
+        }
+      }
+    },
+    "net5.0": {
+      "Newtonsoft.Json/13.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
+      "GoogleMapsClient/1.0.1.1": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.1"
+        },
+        "compile": {
+          "bin/placeholder/GoogleMapsClient.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GoogleMapsClient.dll": {}
+        }
+      }
+    },
+    "net5.0/win7-x86": {
+      "Newtonsoft.Json/13.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
+      "GoogleMapsClient/1.0.1.1": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.1"
+        },
+        "compile": {
+          "bin/placeholder/GoogleMapsClient.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GoogleMapsClient.dll": {}
+        }
+      }
+    },
+    "net6.0": {
+      "Newtonsoft.Json/13.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
+      "GoogleMapsClient/1.0.1.1": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.1"
+        },
+        "compile": {
+          "bin/placeholder/GoogleMapsClient.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GoogleMapsClient.dll": {}
+        }
+      }
+    },
+    "net6.0/win7-x86": {
+      "Newtonsoft.Json/13.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
+      "GoogleMapsClient/1.0.1.1": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.1"
         },
         "compile": {
           "bin/placeholder/GoogleMapsClient.dll": {}
@@ -99,10 +195,10 @@
     }
   },
   "libraries": {
-    "Newtonsoft.Json/12.0.3": {
-      "sha512": "6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
+    "Newtonsoft.Json/13.0.1": {
+      "sha512": "ppPFpBcvxdsfUonNcvITKqLl3bqxWbDCZIzDWHzjpdAHRFfZe0Dw9HmA0+za13IdyrgJwpkDTDA9fHaxOrt20A==",
       "type": "package",
-      "path": "newtonsoft.json/12.0.3",
+      "path": "newtonsoft.json/13.0.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -121,16 +217,12 @@
         "lib/netstandard1.3/Newtonsoft.Json.xml",
         "lib/netstandard2.0/Newtonsoft.Json.dll",
         "lib/netstandard2.0/Newtonsoft.Json.xml",
-        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.dll",
-        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
-        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
-        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
-        "newtonsoft.json.12.0.3.nupkg.sha512",
+        "newtonsoft.json.13.0.1.nupkg.sha512",
         "newtonsoft.json.nuspec",
         "packageIcon.png"
       ]
     },
-    "GoogleMapsClient/1.0.1": {
+    "GoogleMapsClient/1.0.1.1": {
       "type": "project",
       "path": "../GoogleMapsClient/GoogleMapsClient.csproj",
       "msbuildProject": "../GoogleMapsClient/GoogleMapsClient.csproj"
@@ -138,38 +230,49 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "GoogleMapsClient >= 1.0.1"
+      "GoogleMapsClient >= 1.0.1.1"
     ],
     ".NETFramework,Version=v4.6.1": [
-      "GoogleMapsClient >= 1.0.1"
+      "GoogleMapsClient >= 1.0.1.1"
+    ],
+    "net5.0": [
+      "GoogleMapsClient >= 1.0.1.1"
+    ],
+    "net6.0": [
+      "GoogleMapsClient >= 1.0.1.1"
     ]
   },
   "packageFolders": {
     "C:\\Users\\joelc\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\code\\google\\GoogleMapsClient\\Test\\Test.csproj",
+      "projectUniqueName": "C:\\Code\\Google\\GoogleMapsClient\\Test\\Test.csproj",
       "projectName": "Test",
-      "projectPath": "c:\\code\\google\\GoogleMapsClient\\Test\\Test.csproj",
+      "projectPath": "C:\\Code\\Google\\GoogleMapsClient\\Test\\Test.csproj",
       "packagesPath": "C:\\Users\\joelc\\.nuget\\packages\\",
-      "outputPath": "c:\\code\\google\\GoogleMapsClient\\Test\\obj\\",
+      "outputPath": "C:\\Code\\Google\\GoogleMapsClient\\Test\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\",
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
         "C:\\Users\\joelc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net461",
+        "net5.0",
+        "net6.0",
         "netcoreapp3.1"
       ],
       "sources": {
@@ -178,16 +281,34 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "c:\\code\\google\\GoogleMapsClient\\GoogleMapsClient\\GoogleMapsClient.csproj": {
-              "projectPath": "c:\\code\\google\\GoogleMapsClient\\GoogleMapsClient\\GoogleMapsClient.csproj"
+            "C:\\Code\\Google\\GoogleMapsClient\\GoogleMapsClient\\GoogleMapsClient.csproj": {
+              "projectPath": "C:\\Code\\Google\\GoogleMapsClient\\GoogleMapsClient\\GoogleMapsClient.csproj"
+            }
+          }
+        },
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "projectReferences": {
+            "C:\\Code\\Google\\GoogleMapsClient\\GoogleMapsClient\\GoogleMapsClient.csproj": {
+              "projectPath": "C:\\Code\\Google\\GoogleMapsClient\\GoogleMapsClient\\GoogleMapsClient.csproj"
+            }
+          }
+        },
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {
+            "C:\\Code\\Google\\GoogleMapsClient\\GoogleMapsClient\\GoogleMapsClient.csproj": {
+              "projectPath": "C:\\Code\\Google\\GoogleMapsClient\\GoogleMapsClient\\GoogleMapsClient.csproj"
             }
           }
         },
         "net461": {
+          "targetAlias": "net461",
           "projectReferences": {
-            "c:\\code\\google\\GoogleMapsClient\\GoogleMapsClient\\GoogleMapsClient.csproj": {
-              "projectPath": "c:\\code\\google\\GoogleMapsClient\\GoogleMapsClient\\GoogleMapsClient.csproj"
+            "C:\\Code\\Google\\GoogleMapsClient\\GoogleMapsClient\\GoogleMapsClient.csproj": {
+              "projectPath": "C:\\Code\\Google\\GoogleMapsClient\\GoogleMapsClient\\GoogleMapsClient.csproj"
             }
           }
         }
@@ -200,6 +321,7 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "imports": [
           "net461",
           "net462",
@@ -215,10 +337,49 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+      },
+      "net5.0": {
+        "targetAlias": "net5.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+      },
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
       },
       "net461": {
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
+        "targetAlias": "net461",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {
