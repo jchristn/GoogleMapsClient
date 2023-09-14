@@ -1,0 +1,45 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>net462;net472;net6.0;net7.0</TargetFrameworks>
+		<Version>1.0.3</Version>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<Authors>Joel Christner</Authors>
+		<Company>Joel Christner</Company>
+		<Description>I needed a simple way to parse addresses and resolve coordinates to an address.  Plug in a Google Maps API key and you're all set.</Description>
+		<Copyright>(c)2023 Joel Christner</Copyright>
+		<PackageLicenseFile>LICENSE.md</PackageLicenseFile>
+		<PackageProjectUrl>https://github.com/jchristn/GoogleMapsClient</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/jchristn/GoogleMapsClient</RepositoryUrl>
+		<RepositoryType>Github</RepositoryType>
+		<PackageTags>google maps coordinates address map coordinate</PackageTags>
+		<PackageReleaseNotes>Dependency changes, retarget</PackageReleaseNotes>
+		<PackageIcon>icon.png</PackageIcon>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|netstandard2.1|AnyCPU'">
+		<DocumentationFile>./GoogleMapsClient.xml</DocumentationFile>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="..\..\Assets\icon.png">
+		  <Pack>True</Pack>
+		  <PackagePath>\</PackagePath>
+		</None>
+		<None Include="..\..\README.md">
+		  <Pack>True</Pack>
+		  <PackagePath>\</PackagePath>
+		</None>
+		<None Include="LICENSE.md">
+			<Pack>True</Pack>
+			<PackagePath></PackagePath>
+		</None>
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="RestWrapper" Version="3.0.8" />
+		<PackageReference Include="System.Text.Json" Version="7.0.3" />
+	</ItemGroup>
+
+</Project>
