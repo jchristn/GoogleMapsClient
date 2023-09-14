@@ -7,7 +7,7 @@ namespace GoogleMapsClient
     /// <summary>
     /// Coordinates
     /// </summary>
-    public class Coordinates
+    public class GoogleMapsCoordinates
     { 
         /// <summary>
         /// Latitude.

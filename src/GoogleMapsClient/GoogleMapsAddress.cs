@@ -7,7 +7,7 @@ namespace GoogleMapsClient
     /// <summary>
     /// Address parsed from Google Maps API response.
     /// </summary>
-    public class Address
+    public class GoogleMapsAddress
     {
         #region Public-Members
 
@@ -89,12 +89,12 @@ namespace GoogleMapsClient
         /// <summary>
         /// Coordinates for the Northeast boundary.
         /// </summary>
-        public Coordinates NortheastBoundary { get; set; } = null;
+        public GoogleMapsCoordinates NortheastBoundary { get; set; } = null;
 
         /// <summary>
         /// Coordinates for the Southwest boundary.
         /// </summary>
-        public Coordinates SouthwestBoundary { get; set; } = null;
+        public GoogleMapsCoordinates SouthwestBoundary { get; set; } = null;
 
         /// <summary>
         /// Response object provided by Google Maps endpoint.
@@ -114,7 +114,7 @@ namespace GoogleMapsClient
         /// <summary>
         /// Instantiate the object.
         /// </summary>
-        public Address()
+        public GoogleMapsAddress()
         {
 
         }
@@ -123,7 +123,7 @@ namespace GoogleMapsClient
         /// Instantiate the response.
         /// </summary>
         /// <param name="resp">Google Maps response.</param>
-        public Address(GoogleMapsResponse resp)
+        public GoogleMapsAddress(GoogleMapsResponse resp)
         {
             if (resp == null) throw new ArgumentNullException(nameof(resp));
 
@@ -182,14 +182,14 @@ namespace GoogleMapsClient
                     {
                         if (result.Geometry.Bounds.Northeast != null)
                         {
-                            NortheastBoundary = new Coordinates();
+                            NortheastBoundary = new GoogleMapsCoordinates();
                             NortheastBoundary.Latitude = result.Geometry.Bounds.Northeast.Latitude;
                             NortheastBoundary.Longitude = result.Geometry.Bounds.Northeast.Longitude; 
                         }
 
                         if (result.Geometry.Bounds.Southwest != null)
                         {
-                            SouthwestBoundary = new Coordinates();
+                            SouthwestBoundary = new GoogleMapsCoordinates();
                             SouthwestBoundary.Latitude = result.Geometry.Bounds.Southwest.Latitude;
                             SouthwestBoundary.Longitude = result.Geometry.Bounds.Southwest.Longitude;
                         }

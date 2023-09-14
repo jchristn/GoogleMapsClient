@@ -4,9 +4,11 @@
 
 I needed a simple way to parse addresses and resolve coordinates to an address.  Plug in a Google Maps API key and you're all set.
 
-## New in v1.0.1
+## New in v1.1.0
 
-- LocalTimestamp API
+- Retarget to include .NET 6.0, .NET 7.0
+- Async APIs
+- Minor breaking changes (including ```GoogleMapsAddress```, ```GoogleMapsCoordinates```, ```GoogleMapsTimestamp``` return object)
 
 ## Help and Feedback
 
@@ -17,21 +19,24 @@ First things first - do you need help or have feedback?  File an issue here!
 using GoogleMapsClient;
 
 GoogleMaps client = new GoogleMaps("[your API key here]");
-Address addr = null;
-DateTime dt = DateTime.Now;
-string tz = null;
+GoogleMapsAddress addr;
+GoogleMapsTimestamp ts;
 
 // Get details about coordinates
 addr = client.QueryCoordinates(37.4220578, -122.0840897);
+addr = await client.QueryCoordinatesAsync(37.4220578, -122.0840897);
 
 // Get details about an address
 addr = client.QueryAddress("1600 Amphitheatre Pkwy Mountain View CA");
+addr = await client.QueryAddressAsync("1600 Amphitheatre Pkwy Mountain View CA");
 
 // Get timestamp for coordinates
-dt = client.LocalTimestamp(37.4220578, -122.0840897, DateTime.Now, out tz);
+ts = client.LocalTimestamp(37.4220578, -122.0840897, DateTime.Now);
+ts = await client.LocalTimestampAsync(37.4220578, -122.0840897, DateTime.Now);
 
 // Get timestamp for address
-dt = client.LocalTimestamp("1600 Amphitheatre Pkwy Mountain View CA", DateTime.Now, out tz);
+ts = client.LocalTimestamp("1600 Amphitheatre Pkwy Mountain View CA", DateTime.Now);
+ts = await client.LocalTimestampAsync("1600 Amphitheatre Pkwy Mountain View CA", DateTime.Now);
 ```
 
 ## Version History

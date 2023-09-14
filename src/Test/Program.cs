@@ -42,26 +42,25 @@ namespace Test
                 else if (userInput.StartsWith("ts "))
                 {
                     string timestampStr = userInput.Substring(2);
-                    DateTime ts = DateTime.Now;
-                    string tz = null;
+                    GoogleMapsTimestamp ts = new GoogleMapsTimestamp();
 
                     if (timestampStr.Contains(","))
                     {
                         string[] parts = timestampStr.Split(new char[] { ',' }, 2);
                         double latitude = Convert.ToDouble(parts[0]);
                         double longitude = Convert.ToDouble(parts[1]);
-                        ts = _GoogleMaps.LocalTimestamp(latitude, longitude, DateTime.Now, out tz);
+                        ts = _GoogleMaps.LocalTimestamp(latitude, longitude, DateTime.Now);
                     }
                     else
                     {
-                        ts = _GoogleMaps.LocalTimestamp(timestampStr, DateTime.Now, out tz);
+                        ts = _GoogleMaps.LocalTimestamp(timestampStr, DateTime.Now);
                     }
 
-                    Console.WriteLine(tz + ": " + ts.ToString("s"));
+                    Console.WriteLine(ts.TimezoneName + ": " + ts.LocalTime.ToString("s"));
                 }
                 else
                 {
-                    Address addr = null;
+                    GoogleMapsAddress addr = null;
 
                     if (userInput.Contains(","))
                     {

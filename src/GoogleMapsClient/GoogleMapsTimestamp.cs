@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RestWrapper;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -43,6 +44,17 @@ namespace GoogleMapsClient
         /// </summary>
         [JsonPropertyName("timeZoneName")]
         public string TimezoneName { get; set; } = "Pacific Daylight Time";
+
+        /// <summary>
+        /// Local time.
+        /// </summary>
+        public DateTime LocalTime
+        {
+            get
+            {
+                return DateTime.UtcNow.AddSeconds(DaylightSavingsTimeOffset + RawOffset);
+            }
+        }
 
         #endregion
 

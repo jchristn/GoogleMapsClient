@@ -83,11 +83,22 @@ namespace GoogleMapsClient
         /// <param name="latitude">Latitude.</param>
         /// <param name="longitude">Longitude.</param>
         /// <returns>Address details.</returns>
-        public Address QueryCoordinates(double latitude, double longitude)
+        public GoogleMapsAddress QueryCoordinates(double latitude, double longitude)
+        {
+            return QueryCoordinatesAsync(latitude, longitude).Result;
+        }
+
+        /// <summary>
+        /// Retrieve address details for a specified set of coordinates.
+        /// </summary>
+        /// <param name="latitude">Latitude.</param>
+        /// <param name="longitude">Longitude.</param>
+        /// <returns>Address details.</returns>
+        public async Task<GoogleMapsAddress> QueryCoordinatesAsync(double latitude, double longitude)
         {
             string url = _BaseUrl + _ApiKey + "&latlng=" + latitude + "," + longitude;
-            GoogleMapsResponse resp = GetGoogleMapsResponse(HttpMethod.Get, url);
-            return new Address(resp);
+            GoogleMapsResponse resp = await GetGoogleMapsResponseAsync(HttpMethod.Get, url);
+            return new GoogleMapsAddress(resp);
         }
 
         /// <summary>
@@ -95,12 +106,22 @@ namespace GoogleMapsClient
         /// </summary>
         /// <param name="address">Address.</param>
         /// <returns>Address details.</returns>
-        public Address QueryAddress(string address)
+        public GoogleMapsAddress QueryAddress(string address)
+        {
+            return QueryAddressAsync(address).Result;
+        }
+
+        /// <summary>
+        /// Retrieve address details for a specified address.
+        /// </summary>
+        /// <param name="address">Address.</param>
+        /// <returns>Address details.</returns>
+        public async Task<GoogleMapsAddress> QueryAddressAsync(string address)
         {
             if (String.IsNullOrEmpty(address)) throw new ArgumentNullException(nameof(address));
             string url = _BaseUrl + _ApiKey + "&address=" + WebUtility.UrlEncode(address);
-            GoogleMapsResponse resp = GetGoogleMapsResponse(HttpMethod.Get, url);
-            return new Address(resp);
+            GoogleMapsResponse resp = await GetGoogleMapsResponseAsync(HttpMethod.Get, url);
+            return new GoogleMapsAddress(resp);
         }
 
         /// <summary>
@@ -111,21 +132,29 @@ namespace GoogleMapsClient
         /// <param name="timestamp">Timestamp for which the local timestamp should be retrieved.</param>
         /// <param name="timezone">Timezone string.</param>
         /// <returns>Local timestamp.</returns>
-        public DateTime LocalTimestamp(double latitude, double longitude, DateTime timestamp, out string timezone)
+        public GoogleMapsTimestamp LocalTimestamp(double latitude, double longitude, DateTime timestamp)
         {
-            timezone = "Universal Time Coordinated (UTC)";
+            return LocalTimestampAsync(latitude, longitude, timestamp).Result;
+        }
 
+        /// <summary>
+        /// Generate a timestamp for a given set of coordinates.
+        /// </summary>
+        /// <param name="latitude">Latitude.</param>
+        /// <param name="longitude">Longitude.</param>
+        /// <param name="timestamp">Timestamp for which the local timestamp should be retrieved.</param>
+        /// <param name="timezone">Timezone string.</param>
+        /// <returns>Local timestamp.</returns>
+        public async Task<GoogleMapsTimestamp> LocalTimestampAsync(double latitude, double longitude, DateTime timestamp)
+        {
             timestamp = timestamp.ToUniversalTime();
             DateTime origin = new DateTime(1970, 1, 1, 0, 0, 0, 0);
             TimeSpan diff = timestamp.ToUniversalTime() - origin;
             double ts = Math.Floor(diff.TotalSeconds);
 
             string url = "https://maps.googleapis.com/maps/api/timezone/json?location=" + latitude + "," + longitude + "&key=" + _ApiKey + "&timestamp=" + ts;
-            string result = GetRestResponse(HttpMethod.Get, url);
-
-            GoogleMapsTimestamp data = SerializationHelper.DeserializeJson<GoogleMapsTimestamp>(result);
-            timezone = data.TimezoneName;
-            return timestamp.AddSeconds(data.DaylightSavingsTimeOffset + data.RawOffset);
+            string result = await GetRestResponseAsync (HttpMethod.Get, url);
+            return SerializationHelper.DeserializeJson<GoogleMapsTimestamp>(result);
         }
 
         /// <summary>
@@ -135,15 +164,25 @@ namespace GoogleMapsClient
         /// <param name="timestamp">Timestamp for which the local timestamp should be retrieved.</param>
         /// <param name="timezone">Timezone string.</param>
         /// <returns>Local timestamp.</returns>
-        public DateTime LocalTimestamp(string address, DateTime timestamp, out string timezone)
+        public GoogleMapsTimestamp LocalTimestamp(string address, DateTime timestamp)
+        {
+            return LocalTimestampAsync(address, timestamp).Result;
+        }
+
+        /// <summary>
+        /// Retrieve the local timestamp for a given address.
+        /// </summary>
+        /// <param name="address"></param>
+        /// <param name="timestamp">Timestamp for which the local timestamp should be retrieved.</param>
+        /// <returns>Local timestamp.</returns>
+        public async Task<GoogleMapsTimestamp> LocalTimestampAsync(string address, DateTime timestamp)
         {
             if (String.IsNullOrEmpty(address)) throw new ArgumentNullException(nameof(address));
-            Address addr = QueryAddress(address);
-            return LocalTimestamp(
-                Convert.ToDouble(addr.Latitude), 
-                Convert.ToDouble(addr.Longitude), 
-                timestamp, 
-                out timezone);
+            GoogleMapsAddress addr = await QueryAddressAsync(address);
+            return await LocalTimestampAsync(
+                Convert.ToDouble(addr.Latitude),
+                Convert.ToDouble(addr.Longitude),
+                timestamp);
         }
 
         #endregion
