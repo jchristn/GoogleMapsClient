@@ -2,7 +2,7 @@
 
 	<PropertyGroup>
 		<TargetFrameworks>net462;net472;net6.0;net7.0</TargetFrameworks>
-		<Version>1.1.0</Version>
+		<Version>1.1.4</Version>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 		<Authors>Joel Christner</Authors>
 		<Company>Joel Christner</Company>
@@ -16,6 +16,8 @@
 		<PackageReleaseNotes>Dependency changes, retarget</PackageReleaseNotes>
 		<PackageIcon>icon.png</PackageIcon>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<IncludeSymbols>True</IncludeSymbols>
+		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|netstandard2.1|AnyCPU'">
@@ -38,7 +40,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="RestWrapper" Version="3.0.8" />
+		<PackageReference Include="RestWrapper" Version="3.0.10" />
 		<PackageReference Include="System.Text.Json" Version="7.0.3" />
 	</ItemGroup>
 

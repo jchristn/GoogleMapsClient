@@ -46,6 +46,22 @@ namespace GoogleMapsClient
         }
 
         /// <summary>
+        /// RESTful timeout in milliseconds.
+        /// </summary>
+        public int TimeoutMs
+        {
+            get
+            {
+                return _TimeoutMs;
+            }
+            set
+            {
+                if (value < 1) throw new ArgumentOutOfRangeException(nameof(TimeoutMs));
+                _TimeoutMs = value;
+            }
+        }
+
+        /// <summary>
         /// Method to use when sending log messages.
         /// </summary>
         public Action<string> Logger { get; set; } = null;
@@ -57,6 +73,7 @@ namespace GoogleMapsClient
         private string _ApiKey = null;
         private string _BaseUrl = "https://maps.googleapis.com/maps/api/geocode/json?sensor=false&key=";
         private string _Header = "[GoogleMaps] ";
+        private int _TimeoutMs = 15000;
 
         #endregion
 
@@ -93,11 +110,12 @@ namespace GoogleMapsClient
         /// </summary>
         /// <param name="latitude">Latitude.</param>
         /// <param name="longitude">Longitude.</param>
+        /// <param name="token">Cancellation token.</param>
         /// <returns>Address details.</returns>
-        public async Task<GoogleMapsAddress> QueryCoordinatesAsync(double latitude, double longitude)
+        public async Task<GoogleMapsAddress> QueryCoordinatesAsync(double latitude, double longitude, CancellationToken token = default)
         {
             string url = _BaseUrl + _ApiKey + "&latlng=" + latitude + "," + longitude;
-            GoogleMapsResponse resp = await GetGoogleMapsResponseAsync(HttpMethod.Get, url);
+            GoogleMapsResponse resp = await GetGoogleMapsResponseAsync(HttpMethod.Get, url, null, TimeoutMs, token).ConfigureAwait(false);
             return new GoogleMapsAddress(resp);
         }
 
@@ -115,12 +133,13 @@ namespace GoogleMapsClient
         /// Retrieve address details for a specified address.
         /// </summary>
         /// <param name="address">Address.</param>
+        /// <param name="token">Cancellation token.</param>
         /// <returns>Address details.</returns>
-        public async Task<GoogleMapsAddress> QueryAddressAsync(string address)
+        public async Task<GoogleMapsAddress> QueryAddressAsync(string address, CancellationToken token = default)
         {
             if (String.IsNullOrEmpty(address)) throw new ArgumentNullException(nameof(address));
             string url = _BaseUrl + _ApiKey + "&address=" + WebUtility.UrlEncode(address);
-            GoogleMapsResponse resp = await GetGoogleMapsResponseAsync(HttpMethod.Get, url);
+            GoogleMapsResponse resp = await GetGoogleMapsResponseAsync(HttpMethod.Get, url, null, TimeoutMs, token).ConfigureAwait(false);
             return new GoogleMapsAddress(resp);
         }
 
@@ -144,8 +163,9 @@ namespace GoogleMapsClient
         /// <param name="longitude">Longitude.</param>
         /// <param name="timestamp">Timestamp for which the local timestamp should be retrieved.</param>
         /// <param name="timezone">Timezone string.</param>
+        /// <param name="token">Cancellation token.</param>
         /// <returns>Local timestamp.</returns>
-        public async Task<GoogleMapsTimestamp> LocalTimestampAsync(double latitude, double longitude, DateTime timestamp)
+        public async Task<GoogleMapsTimestamp> LocalTimestampAsync(double latitude, double longitude, DateTime timestamp, CancellationToken token = default)
         {
             timestamp = timestamp.ToUniversalTime();
             DateTime origin = new DateTime(1970, 1, 1, 0, 0, 0, 0);
@@ -153,7 +173,7 @@ namespace GoogleMapsClient
             double ts = Math.Floor(diff.TotalSeconds);
 
             string url = "https://maps.googleapis.com/maps/api/timezone/json?location=" + latitude + "," + longitude + "&key=" + _ApiKey + "&timestamp=" + ts;
-            string result = await GetRestResponseAsync (HttpMethod.Get, url);
+            string result = await GetRestResponseAsync(HttpMethod.Get, url, null, TimeoutMs, token).ConfigureAwait(false);
             return SerializationHelper.DeserializeJson<GoogleMapsTimestamp>(result);
         }
 
@@ -174,61 +194,69 @@ namespace GoogleMapsClient
         /// </summary>
         /// <param name="address"></param>
         /// <param name="timestamp">Timestamp for which the local timestamp should be retrieved.</param>
+        /// <param name="token">Cancellation token.</param>
         /// <returns>Local timestamp.</returns>
-        public async Task<GoogleMapsTimestamp> LocalTimestampAsync(string address, DateTime timestamp)
+        public async Task<GoogleMapsTimestamp> LocalTimestampAsync(string address, DateTime timestamp, CancellationToken token = default)
         {
             if (String.IsNullOrEmpty(address)) throw new ArgumentNullException(nameof(address));
-            GoogleMapsAddress addr = await QueryAddressAsync(address);
+            GoogleMapsAddress addr = await QueryAddressAsync(address, token).ConfigureAwait(false);
             return await LocalTimestampAsync(
                 Convert.ToDouble(addr.Latitude),
                 Convert.ToDouble(addr.Longitude),
-                timestamp);
+                timestamp,
+                token).ConfigureAwait(false);
         }
 
         #endregion
 
         #region Private-Methods
 
-        private GoogleMapsResponse GetGoogleMapsResponse(HttpMethod method, string url, string body = null)
+        private async Task<GoogleMapsResponse> GetGoogleMapsResponseAsync(HttpMethod method, string url, string body = null, int timeoutMs = 15000, CancellationToken token = default)
         {
-            return SerializationHelper.DeserializeJson<GoogleMapsResponse>(GetRestResponse(method, url, body));
+            return SerializationHelper.DeserializeJson<GoogleMapsResponse>(await GetRestResponseAsync(method, url, body, timeoutMs, token).ConfigureAwait(false));
         }
 
-        private async Task<GoogleMapsResponse> GetGoogleMapsResponseAsync(HttpMethod method, string url, string body = null)
+        private async Task<string> GetRestResponseAsync(HttpMethod method, string url, string body = null, int timeoutMs = 15000, CancellationToken token = default)
         {
-            return SerializationHelper.DeserializeJson<GoogleMapsResponse>(await GetRestResponseAsync(method, url, body));
-        }
+            using (RestRequest req = new RestRequest(url, method))
+            {
+                req.TimeoutMilliseconds = timeoutMs;
 
-        private string GetRestResponse(HttpMethod method, string url, string body = null)
-        {
-            string loggedUrl = url;
-            loggedUrl = loggedUrl.Replace(_ApiKey, "[redacted]");
-            Logger?.Invoke(_Header + method.ToString() + " " + url);
-
-            RestRequest req = new RestRequest(url, method);
-            RestResponse resp = null;
-
-            if (!String.IsNullOrEmpty(body)) resp = req.Send(body);
-            else resp = req.Send();
-
-            string data = resp.DataAsString;
-            Logger?.Invoke(_Header + "response:" + Environment.NewLine + resp.DataAsString);
-
-            return resp.DataAsString;
-        }
-
-        private async Task<string> GetRestResponseAsync(HttpMethod method, string url, string body = null)
-        {
-            RestRequest req = new RestRequest(url, method);
-            RestResponse resp = null;
-
-            if (!String.IsNullOrEmpty(body)) resp = await req.SendAsync(body);
-            else resp = await req.SendAsync();
-
-            string data = resp.DataAsString;
-            Logger?.Invoke(_Header + "response:" + Environment.NewLine + resp.DataAsString);
-
-            return resp.DataAsString;
+                if (!String.IsNullOrEmpty(body))
+                {
+                    using (RestResponse resp = await req.SendAsync(body, token).ConfigureAwait(false))
+                    {
+                        if (resp != null)
+                        {
+                            string data = resp.DataAsString;
+                            Logger?.Invoke(_Header + "response:" + Environment.NewLine + resp.DataAsString);
+                            return resp.DataAsString;
+                        }
+                        else
+                        {
+                            Logger?.Invoke(_Header + "null response");
+                            return null;
+                        }
+                    }
+                }
+                else
+                {
+                    using (RestResponse resp = await req.SendAsync(token).ConfigureAwait(false))
+                    {
+                        if (resp != null)
+                        {
+                            string data = resp.DataAsString;
+                            Logger?.Invoke(_Header + "response:" + Environment.NewLine + resp.DataAsString);
+                            return resp.DataAsString;
+                        }
+                        else
+                        {
+                            Logger?.Invoke(_Header + "null response");
+                            return null;
+                        }
+                    }
+                }
+            }
         }
 
         #endregion

@@ -6,9 +6,9 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
-      "GoogleMapsClient/1.1.0": {
+      "GoogleMapsClient/1.1.4": {
         "dependencies": {
-          "RestWrapper": "3.0.8",
+          "RestWrapper": "3.0.10",
           "System.Text.Json": "7.0.3"
         },
         "runtime": {
@@ -17,15 +17,15 @@
       },
       "Microsoft.NETCore.Platforms/1.1.1": {},
       "Microsoft.NETCore.Targets/1.1.0": {},
-      "RestWrapper/3.0.8": {
+      "RestWrapper/3.0.10": {
         "dependencies": {
           "System.Net.Http": "4.3.4",
           "System.Text.Json": "7.0.3"
         },
         "runtime": {
           "lib/net6.0/RestWrapper.dll": {
-            "assemblyVersion": "3.0.8.0",
-            "fileVersion": "3.0.8.0"
+            "assemblyVersion": "3.0.10.0",
+            "fileVersion": "3.0.10.0"
           }
         }
       },
@@ -454,7 +454,7 @@
     }
   },
   "libraries": {
-    "GoogleMapsClient/1.1.0": {
+    "GoogleMapsClient/1.1.4": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -473,12 +473,12 @@
       "path": "microsoft.netcore.targets/1.1.0",
       "hashPath": "microsoft.netcore.targets.1.1.0.nupkg.sha512"
     },
-    "RestWrapper/3.0.8": {
+    "RestWrapper/3.0.10": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-duKKR6PD9BIJcp36/MkOHc76xQu4wEHpD2kO4VnlPE0CKYSVRiI6gi2kvKlzZy04MiVhf/v2c7ty2yZH9bEgNg==",
-      "path": "restwrapper/3.0.8",
-      "hashPath": "restwrapper.3.0.8.nupkg.sha512"
+      "sha512": "sha512-Pv6qCGYGiUsfpolzP1wmVe6ceHXWiHvJjph0BfRYBXjCRTx240dsh0RnHCnLytOEGZpflYHgH12Nf91L/swYZw==",
+      "path": "restwrapper/3.0.10",
+      "hashPath": "restwrapper.3.0.10.nupkg.sha512"
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {
       "type": "package",

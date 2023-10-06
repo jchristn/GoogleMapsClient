@@ -5,7 +5,7 @@
   },
   "projects": {
     "C:\\Code\\Google\\GoogleMapsClient\\src\\GoogleMapsClient\\GoogleMapsClient.csproj": {
-      "version": "1.1.0",
+      "version": "1.1.4",
       "restore": {
         "projectUniqueName": "C:\\Code\\Google\\GoogleMapsClient\\src\\GoogleMapsClient\\GoogleMapsClient.csproj",
         "projectName": "GoogleMapsClient",
@@ -66,7 +66,7 @@
           "dependencies": {
             "RestWrapper": {
               "target": "Package",
-              "version": "[3.0.8, )"
+              "version": "[3.0.10, )"
             },
             "System.Text.Json": {
               "target": "Package",
@@ -110,7 +110,7 @@
           "dependencies": {
             "RestWrapper": {
               "target": "Package",
-              "version": "[3.0.8, )"
+              "version": "[3.0.10, )"
             },
             "System.Text.Json": {
               "target": "Package",
@@ -154,7 +154,7 @@
           "dependencies": {
             "RestWrapper": {
               "target": "Package",
-              "version": "[3.0.8, )"
+              "version": "[3.0.10, )"
             },
             "System.Text.Json": {
               "target": "Package",
@@ -168,7 +168,7 @@
           "dependencies": {
             "RestWrapper": {
               "target": "Package",
-              "version": "[3.0.8, )"
+              "version": "[3.0.10, )"
             },
             "System.Text.Json": {
               "target": "Package",

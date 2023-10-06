@@ -88,7 +88,7 @@ namespace Test
             Console.WriteLine("  ts [address]   Generate timestamp for a specific address");
             Console.WriteLine("  ts [lat,lng]   Generate timestamp for specific coordinates");
             Console.WriteLine("  [lat,lng]      Process coordinates");
-            Console.WriteLine("  [address]      Process address");
+            Console.WriteLine("  [address]      Process address (do not use commas in the address)");
             Console.WriteLine("");
         }
     }
