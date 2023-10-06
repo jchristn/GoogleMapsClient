@@ -306,7 +306,7 @@
           }
         }
       },
-      "GoogleMapsClient/1.1.4": {
+      "GoogleMapsClient/1.1.5": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.6.2",
         "dependencies": {
@@ -582,7 +582,7 @@
           }
         }
       },
-      "GoogleMapsClient/1.1.4": {
+      "GoogleMapsClient/1.1.5": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.6.2",
         "dependencies": {
@@ -932,7 +932,7 @@
           }
         }
       },
-      "GoogleMapsClient/1.1.4": {
+      "GoogleMapsClient/1.1.5": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.7.2",
         "dependencies": {
@@ -1238,7 +1238,7 @@
           }
         }
       },
-      "GoogleMapsClient/1.1.4": {
+      "GoogleMapsClient/1.1.5": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.7.2",
         "dependencies": {
@@ -2136,7 +2136,7 @@
           }
         }
       },
-      "GoogleMapsClient/1.1.4": {
+      "GoogleMapsClient/1.1.5": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
@@ -3215,7 +3215,7 @@
           }
         }
       },
-      "GoogleMapsClient/1.1.4": {
+      "GoogleMapsClient/1.1.5": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
@@ -4093,7 +4093,7 @@
           }
         }
       },
-      "GoogleMapsClient/1.1.4": {
+      "GoogleMapsClient/1.1.5": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
@@ -5152,7 +5152,7 @@
           }
         }
       },
-      "GoogleMapsClient/1.1.4": {
+      "GoogleMapsClient/1.1.5": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
@@ -8223,7 +8223,7 @@
         "version.txt"
       ]
     },
-    "GoogleMapsClient/1.1.4": {
+    "GoogleMapsClient/1.1.5": {
       "type": "project",
       "path": "../GoogleMapsClient/GoogleMapsClient.csproj",
       "msbuildProject": "../GoogleMapsClient/GoogleMapsClient.csproj"
@@ -8231,16 +8231,16 @@
   },
   "projectFileDependencyGroups": {
     ".NETFramework,Version=v4.6.2": [
-      "GoogleMapsClient >= 1.1.4"
+      "GoogleMapsClient >= 1.1.5"
     ],
     ".NETFramework,Version=v4.7.2": [
-      "GoogleMapsClient >= 1.1.4"
+      "GoogleMapsClient >= 1.1.5"
     ],
     "net6.0": [
-      "GoogleMapsClient >= 1.1.4"
+      "GoogleMapsClient >= 1.1.5"
     ],
     "net7.0": [
-      "GoogleMapsClient >= 1.1.4"
+      "GoogleMapsClient >= 1.1.5"
     ]
   },
   "packageFolders": {

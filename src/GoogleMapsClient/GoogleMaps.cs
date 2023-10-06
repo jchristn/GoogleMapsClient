@@ -213,7 +213,15 @@ namespace GoogleMapsClient
 
         private async Task<GoogleMapsResponse> GetGoogleMapsResponseAsync(HttpMethod method, string url, string body = null, int timeoutMs = 15000, CancellationToken token = default)
         {
-            return SerializationHelper.DeserializeJson<GoogleMapsResponse>(await GetRestResponseAsync(method, url, body, timeoutMs, token).ConfigureAwait(false));
+            string response = await GetRestResponseAsync(method, url, body, timeoutMs, token).ConfigureAwait(false);
+            if (!String.IsNullOrEmpty(response))
+            {
+                return SerializationHelper.DeserializeJson<GoogleMapsResponse>(response);
+            }
+            else
+            {
+                return null;
+            }
         }
 
         private async Task<string> GetRestResponseAsync(HttpMethod method, string url, string body = null, int timeoutMs = 15000, CancellationToken token = default)

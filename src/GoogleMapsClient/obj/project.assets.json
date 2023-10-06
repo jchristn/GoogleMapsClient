@@ -4828,7 +4828,7 @@
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
-    "version": "1.1.4",
+    "version": "1.1.5",
     "restore": {
       "projectUniqueName": "C:\\Code\\Google\\GoogleMapsClient\\src\\GoogleMapsClient\\GoogleMapsClient.csproj",
       "projectName": "GoogleMapsClient",
