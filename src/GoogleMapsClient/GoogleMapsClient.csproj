@@ -1,8 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFrameworks>net462;net472;net6.0;net7.0</TargetFrameworks>
-		<Version>1.1.5</Version>
+		<TargetFrameworks>net462;net472;net48;net6.0;net7.0</TargetFrameworks>
+		<Version>1.1.7</Version>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 		<Authors>Joel Christner</Authors>
 		<Company>Joel Christner</Company>
@@ -40,7 +40,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="RestWrapper" Version="3.0.10" />
+		<PackageReference Include="RestWrapper" Version="3.0.11" />
 		<PackageReference Include="System.Text.Json" Version="7.0.3" />
 	</ItemGroup>
 

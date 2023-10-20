@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Threading;
+using System.Threading.Tasks;
 using GoogleMapsClient;
 
 namespace Test
@@ -10,7 +12,7 @@ namespace Test
         static Action<string> _Logger = null;
         static bool _RunForever = true;
 
-        static void Main(string[] args)
+        static async Task Main(string[] args)
         {
             while (String.IsNullOrEmpty(_ApiKey))
             {
@@ -49,11 +51,11 @@ namespace Test
                         string[] parts = timestampStr.Split(new char[] { ',' }, 2);
                         double latitude = Convert.ToDouble(parts[0]);
                         double longitude = Convert.ToDouble(parts[1]);
-                        ts = _GoogleMaps.LocalTimestamp(latitude, longitude, DateTime.Now);
+                        ts = await _GoogleMaps.LocalTimestampAsync(latitude, longitude, DateTime.Now);
                     }
                     else
                     {
-                        ts = _GoogleMaps.LocalTimestamp(timestampStr, DateTime.Now);
+                        ts = await _GoogleMaps.LocalTimestampAsync(timestampStr, DateTime.Now);
                     }
 
                     Console.WriteLine(ts.TimezoneName + ": " + ts.LocalTime.ToString("s"));
@@ -67,11 +69,11 @@ namespace Test
                         string[] parts = userInput.Split(new char[] { ',' }, 2);
                         double latitude = Convert.ToDouble(parts[0]);
                         double longitude = Convert.ToDouble(parts[1]);
-                        addr = _GoogleMaps.QueryCoordinates(latitude, longitude);
+                        addr = await _GoogleMaps.QueryCoordinatesAsync(latitude, longitude);
                     }
                     else
                     {
-                        addr = _GoogleMaps.QueryAddress(userInput);
+                        addr = await _GoogleMaps.QueryAddressAsync(userInput);
                     }
 
                     Console.WriteLine(SerializationHelper.SerializeJson(addr, true));

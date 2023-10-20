@@ -21,7 +21,7 @@
           "buildTransitive/net462/_._": {}
         }
       },
-      "RestWrapper/3.0.10": {
+      "RestWrapper/3.0.11": {
         "type": "package",
         "dependencies": {
           "System.Net.Http": "4.3.4",
@@ -327,7 +327,7 @@
           "buildTransitive/net462/_._": {}
         }
       },
-      "RestWrapper/3.0.10": {
+      "RestWrapper/3.0.11": {
         "type": "package",
         "dependencies": {
           "System.Net.Http": "4.3.4",
@@ -338,6 +338,351 @@
         },
         "runtime": {
           "lib/net461/RestWrapper.dll": {}
+        }
+      },
+      "System.Buffers/4.5.1": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net45/System.Buffers.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/System.Buffers.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.IO/4.3.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net462/System.IO.dll": {}
+        },
+        "runtime": {
+          "lib/net462/System.IO.dll": {}
+        }
+      },
+      "System.Memory/4.5.5": {
+        "type": "package",
+        "dependencies": {
+          "System.Buffers": "4.5.1",
+          "System.Numerics.Vectors": "4.5.0",
+          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
+        },
+        "frameworkAssemblies": [
+          "System",
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/net461/System.Memory.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/System.Memory.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Net.Http/4.3.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Security.Cryptography.X509Certificates": "4.3.0"
+        },
+        "frameworkAssemblies": [
+          "System",
+          "System.Core",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net46/System.Net.Http.dll": {}
+        },
+        "runtime": {
+          "lib/net46/System.Net.Http.dll": {}
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/netstandard1.6/System.Net.Http.dll": {
+            "assetType": "runtime",
+            "rid": "unix"
+          },
+          "runtimes/win/lib/net46/System.Net.Http.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
+      "System.Numerics.Vectors/4.5.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Numerics",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net46/System.Numerics.Vectors.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net46/System.Numerics.Vectors.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Runtime/4.3.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "System.ComponentModel.Composition",
+          "System.Core",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net462/System.Runtime.dll": {}
+        },
+        "runtime": {
+          "lib/net462/System.Runtime.dll": {}
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/6.0.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/net461/System.Runtime.CompilerServices.Unsafe.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/System.Runtime.CompilerServices.Unsafe.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Security.Cryptography.Algorithms/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "System.IO": "4.3.0",
+          "System.Runtime": "4.3.0",
+          "System.Security.Cryptography.Encoding": "4.3.0",
+          "System.Security.Cryptography.Primitives": "4.3.0"
+        },
+        "frameworkAssemblies": [
+          "System.Core",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net463/System.Security.Cryptography.Algorithms.dll": {}
+        },
+        "runtime": {
+          "lib/net463/System.Security.Cryptography.Algorithms.dll": {}
+        },
+        "runtimeTargets": {
+          "runtimes/osx/lib/netstandard1.6/System.Security.Cryptography.Algorithms.dll": {
+            "assetType": "runtime",
+            "rid": "osx"
+          },
+          "runtimes/unix/lib/netstandard1.6/System.Security.Cryptography.Algorithms.dll": {
+            "assetType": "runtime",
+            "rid": "unix"
+          },
+          "runtimes/win/lib/net463/System.Security.Cryptography.Algorithms.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
+      "System.Security.Cryptography.Encoding/4.3.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net46/System.Security.Cryptography.Encoding.dll": {}
+        },
+        "runtime": {
+          "lib/net46/System.Security.Cryptography.Encoding.dll": {}
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/netstandard1.3/System.Security.Cryptography.Encoding.dll": {
+            "assetType": "runtime",
+            "rid": "unix"
+          },
+          "runtimes/win/lib/net46/System.Security.Cryptography.Encoding.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
+      "System.Security.Cryptography.Primitives/4.3.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net46/System.Security.Cryptography.Primitives.dll": {}
+        },
+        "runtime": {
+          "lib/net46/System.Security.Cryptography.Primitives.dll": {}
+        }
+      },
+      "System.Security.Cryptography.X509Certificates/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Security.Cryptography.Algorithms": "4.3.0",
+          "System.Security.Cryptography.Encoding": "4.3.0"
+        },
+        "frameworkAssemblies": [
+          "System",
+          "System.Core",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.Security.Cryptography.X509Certificates.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Security.Cryptography.X509Certificates.dll": {}
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/netstandard1.6/System.Security.Cryptography.X509Certificates.dll": {
+            "assetType": "runtime",
+            "rid": "unix"
+          },
+          "runtimes/win/lib/net461/System.Security.Cryptography.X509Certificates.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
+      "System.Text.Encodings.Web/7.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Buffers": "4.5.1",
+          "System.Memory": "4.5.5",
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0"
+        },
+        "compile": {
+          "lib/net462/System.Text.Encodings.Web.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net462/System.Text.Encodings.Web.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net462/_._": {}
+        }
+      },
+      "System.Text.Json/7.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl.AsyncInterfaces": "7.0.0",
+          "System.Buffers": "4.5.1",
+          "System.Memory": "4.5.5",
+          "System.Numerics.Vectors": "4.5.0",
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0",
+          "System.Text.Encodings.Web": "7.0.0",
+          "System.Threading.Tasks.Extensions": "4.5.4",
+          "System.ValueTuple": "4.5.0"
+        },
+        "compile": {
+          "lib/net462/System.Text.Json.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net462/System.Text.Json.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net462/System.Text.Json.targets": {}
+        }
+      },
+      "System.Threading.Tasks.Extensions/4.5.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
+        },
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/net461/System.Threading.Tasks.Extensions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/System.Threading.Tasks.Extensions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.ValueTuple/4.5.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net47/System.ValueTuple.dll": {}
+        },
+        "runtime": {
+          "lib/net47/System.ValueTuple.dll": {
+            "related": ".xml"
+          }
+        }
+      }
+    },
+    ".NETFramework,Version=v4.8": {
+      "Microsoft.Bcl.AsyncInterfaces/7.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Threading.Tasks.Extensions": "4.5.4"
+        },
+        "compile": {
+          "lib/net462/Microsoft.Bcl.AsyncInterfaces.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net462/Microsoft.Bcl.AsyncInterfaces.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net462/_._": {}
+        }
+      },
+      "RestWrapper/3.0.11": {
+        "type": "package",
+        "dependencies": {
+          "System.Net.Http": "4.3.4",
+          "System.Text.Json": "6.0.5"
+        },
+        "frameworkAssemblies": [
+          "System.IO",
+          "System.Net.Http",
+          "System.Runtime",
+          "System.Security.Cryptography.Algorithms",
+          "System.Security.Cryptography.Encoding",
+          "System.Security.Cryptography.Primitives",
+          "System.Security.Cryptography.X509Certificates"
+        ],
+        "compile": {
+          "lib/net48/RestWrapper.dll": {}
+        },
+        "runtime": {
+          "lib/net48/RestWrapper.dll": {}
         }
       },
       "System.Buffers/4.5.1": {
@@ -662,7 +1007,7 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "RestWrapper/3.0.10": {
+      "RestWrapper/3.0.11": {
         "type": "package",
         "dependencies": {
           "System.Net.Http": "4.3.4",
@@ -1546,7 +1891,7 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "RestWrapper/3.0.10": {
+      "RestWrapper/3.0.11": {
         "type": "package",
         "dependencies": {
           "System.Net.Http": "4.3.4",
@@ -2446,10 +2791,10 @@
         "runtime.json"
       ]
     },
-    "RestWrapper/3.0.10": {
-      "sha512": "Pv6qCGYGiUsfpolzP1wmVe6ceHXWiHvJjph0BfRYBXjCRTx240dsh0RnHCnLytOEGZpflYHgH12Nf91L/swYZw==",
+    "RestWrapper/3.0.11": {
+      "sha512": "0g8oazWxkAZ88XhKk3tdZCzqOKS3qbOe2hYjjk7nymJxqDBcplV1c03KWxY/Ns77C5bt2qShF3cio6LKFgR56g==",
       "type": "package",
-      "path": "restwrapper/3.0.10",
+      "path": "restwrapper/3.0.11",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2462,7 +2807,7 @@
         "lib/net7.0/RestWrapper.dll",
         "lib/netstandard2.1/RestWrapper.dll",
         "lib/netstandard2.1/RestWrapper.xml",
-        "restwrapper.3.0.10.nupkg.sha512",
+        "restwrapper.3.0.11.nupkg.sha512",
         "restwrapper.nuspec"
       ]
     },
@@ -4807,19 +5152,23 @@
   },
   "projectFileDependencyGroups": {
     ".NETFramework,Version=v4.6.2": [
-      "RestWrapper >= 3.0.10",
+      "RestWrapper >= 3.0.11",
       "System.Text.Json >= 7.0.3"
     ],
     ".NETFramework,Version=v4.7.2": [
-      "RestWrapper >= 3.0.10",
+      "RestWrapper >= 3.0.11",
+      "System.Text.Json >= 7.0.3"
+    ],
+    ".NETFramework,Version=v4.8": [
+      "RestWrapper >= 3.0.11",
       "System.Text.Json >= 7.0.3"
     ],
     "net6.0": [
-      "RestWrapper >= 3.0.10",
+      "RestWrapper >= 3.0.11",
       "System.Text.Json >= 7.0.3"
     ],
     "net7.0": [
-      "RestWrapper >= 3.0.10",
+      "RestWrapper >= 3.0.11",
       "System.Text.Json >= 7.0.3"
     ]
   },
@@ -4828,7 +5177,7 @@
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
-    "version": "1.1.5",
+    "version": "1.1.7",
     "restore": {
       "projectUniqueName": "C:\\Code\\Google\\GoogleMapsClient\\src\\GoogleMapsClient\\GoogleMapsClient.csproj",
       "projectName": "GoogleMapsClient",
@@ -4848,6 +5197,7 @@
       "originalTargetFrameworks": [
         "net462",
         "net472",
+        "net48",
         "net6.0",
         "net7.0"
       ],
@@ -4872,6 +5222,10 @@
         "net472": {
           "targetAlias": "net472",
           "projectReferences": {}
+        },
+        "net48": {
+          "targetAlias": "net48",
+          "projectReferences": {}
         }
       },
       "warningProperties": {
@@ -4889,7 +5243,7 @@
         "dependencies": {
           "RestWrapper": {
             "target": "Package",
-            "version": "[3.0.10, )"
+            "version": "[3.0.11, )"
           },
           "System.Text.Json": {
             "target": "Package",
@@ -4933,7 +5287,7 @@
         "dependencies": {
           "RestWrapper": {
             "target": "Package",
-            "version": "[3.0.10, )"
+            "version": "[3.0.11, )"
           },
           "System.Text.Json": {
             "target": "Package",
@@ -4977,7 +5331,7 @@
         "dependencies": {
           "RestWrapper": {
             "target": "Package",
-            "version": "[3.0.10, )"
+            "version": "[3.0.11, )"
           },
           "System.Text.Json": {
             "target": "Package",
@@ -4991,7 +5345,21 @@
         "dependencies": {
           "RestWrapper": {
             "target": "Package",
-            "version": "[3.0.10, )"
+            "version": "[3.0.11, )"
+          },
+          "System.Text.Json": {
+            "target": "Package",
+            "version": "[7.0.3, )"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-preview.7.23376.3\\RuntimeIdentifierGraph.json"
+      },
+      "net48": {
+        "targetAlias": "net48",
+        "dependencies": {
+          "RestWrapper": {
+            "target": "Package",
+            "version": "[3.0.11, )"
           },
           "System.Text.Json": {
             "target": "Package",

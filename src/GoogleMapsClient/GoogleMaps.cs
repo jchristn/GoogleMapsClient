@@ -99,34 +99,21 @@ namespace GoogleMapsClient
         /// </summary>
         /// <param name="latitude">Latitude.</param>
         /// <param name="longitude">Longitude.</param>
-        /// <returns>Address details.</returns>
-        public GoogleMapsAddress QueryCoordinates(double latitude, double longitude)
-        {
-            return QueryCoordinatesAsync(latitude, longitude).Result;
-        }
-
-        /// <summary>
-        /// Retrieve address details for a specified set of coordinates.
-        /// </summary>
-        /// <param name="latitude">Latitude.</param>
-        /// <param name="longitude">Longitude.</param>
         /// <param name="token">Cancellation token.</param>
         /// <returns>Address details.</returns>
         public async Task<GoogleMapsAddress> QueryCoordinatesAsync(double latitude, double longitude, CancellationToken token = default)
         {
             string url = _BaseUrl + _ApiKey + "&latlng=" + latitude + "," + longitude;
             GoogleMapsResponse resp = await GetGoogleMapsResponseAsync(HttpMethod.Get, url, null, TimeoutMs, token).ConfigureAwait(false);
-            return new GoogleMapsAddress(resp);
-        }
-
-        /// <summary>
-        /// Retrieve address details for a specified address.
-        /// </summary>
-        /// <param name="address">Address.</param>
-        /// <returns>Address details.</returns>
-        public GoogleMapsAddress QueryAddress(string address)
-        {
-            return QueryAddressAsync(address).Result;
+            if (resp != null)
+            {
+                return new GoogleMapsAddress(resp);
+            }
+            else
+            {
+                Logger?.Invoke(_Header + "null response for coordinates " + latitude + ", " + longitude);
+                return null;
+            }
         }
 
         /// <summary>
@@ -140,20 +127,15 @@ namespace GoogleMapsClient
             if (String.IsNullOrEmpty(address)) throw new ArgumentNullException(nameof(address));
             string url = _BaseUrl + _ApiKey + "&address=" + WebUtility.UrlEncode(address);
             GoogleMapsResponse resp = await GetGoogleMapsResponseAsync(HttpMethod.Get, url, null, TimeoutMs, token).ConfigureAwait(false);
-            return new GoogleMapsAddress(resp);
-        }
-
-        /// <summary>
-        /// Generate a timestamp for a given set of coordinates.
-        /// </summary>
-        /// <param name="latitude">Latitude.</param>
-        /// <param name="longitude">Longitude.</param>
-        /// <param name="timestamp">Timestamp for which the local timestamp should be retrieved.</param>
-        /// <param name="timezone">Timezone string.</param>
-        /// <returns>Local timestamp.</returns>
-        public GoogleMapsTimestamp LocalTimestamp(double latitude, double longitude, DateTime timestamp)
-        {
-            return LocalTimestampAsync(latitude, longitude, timestamp).Result;
+            if (resp != null)
+            { 
+                return new GoogleMapsAddress(resp);
+            }
+            else
+            {
+                Logger?.Invoke(_Header + "null response for address " + address);
+                return null;
+            }
         }
 
         /// <summary>
@@ -174,19 +156,15 @@ namespace GoogleMapsClient
 
             string url = "https://maps.googleapis.com/maps/api/timezone/json?location=" + latitude + "," + longitude + "&key=" + _ApiKey + "&timestamp=" + ts;
             string result = await GetRestResponseAsync(HttpMethod.Get, url, null, TimeoutMs, token).ConfigureAwait(false);
-            return SerializationHelper.DeserializeJson<GoogleMapsTimestamp>(result);
-        }
-
-        /// <summary>
-        /// Retrieve the local timestamp for a given address.
-        /// </summary>
-        /// <param name="address"></param>
-        /// <param name="timestamp">Timestamp for which the local timestamp should be retrieved.</param>
-        /// <param name="timezone">Timezone string.</param>
-        /// <returns>Local timestamp.</returns>
-        public GoogleMapsTimestamp LocalTimestamp(string address, DateTime timestamp)
-        {
-            return LocalTimestampAsync(address, timestamp).Result;
+            if (!String.IsNullOrEmpty(result))
+            {
+                return SerializationHelper.DeserializeJson<GoogleMapsTimestamp>(result);
+            }
+            else
+            {
+                Logger?.Invoke(_Header + "null response for coordinates " + latitude + ", " + longitude);
+                return null;
+            }
         }
 
         /// <summary>
@@ -200,11 +178,19 @@ namespace GoogleMapsClient
         {
             if (String.IsNullOrEmpty(address)) throw new ArgumentNullException(nameof(address));
             GoogleMapsAddress addr = await QueryAddressAsync(address, token).ConfigureAwait(false);
-            return await LocalTimestampAsync(
-                Convert.ToDouble(addr.Latitude),
-                Convert.ToDouble(addr.Longitude),
-                timestamp,
-                token).ConfigureAwait(false);
+            if (addr != null)
+            {
+                return await LocalTimestampAsync(
+                    Convert.ToDouble(addr.Latitude),
+                    Convert.ToDouble(addr.Longitude),
+                    timestamp,
+                    token).ConfigureAwait(false);
+            }
+            else
+            {
+                Logger?.Invoke(_Header + "null response for address " + address);
+                return null;
+            }
         }
 
         #endregion

@@ -1,0 +1,5 @@
+is_global = true
+build_property.RootNamespace = GoogleMapsClient
+build_property.ProjectDir = C:\Code\Google\GoogleMapsClient\src\GoogleMapsClient\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
