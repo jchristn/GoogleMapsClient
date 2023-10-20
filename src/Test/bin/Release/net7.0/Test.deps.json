@@ -8,7 +8,7 @@
     ".NETCoreApp,Version=v7.0": {
       "Test/1.0.0": {
         "dependencies": {
-          "GoogleMapsClient": "1.1.7"
+          "GoogleMapsClient": "1.1.9"
         },
         "runtime": {
           "Test.dll": {}
@@ -16,15 +16,15 @@
       },
       "Microsoft.NETCore.Platforms/1.1.1": {},
       "Microsoft.NETCore.Targets/1.1.0": {},
-      "RestWrapper/3.0.11": {
+      "RestWrapper/3.0.12": {
         "dependencies": {
           "System.Net.Http": "4.3.4",
           "System.Text.Json": "7.0.3"
         },
         "runtime": {
           "lib/net7.0/RestWrapper.dll": {
-            "assemblyVersion": "3.0.11.0",
-            "fileVersion": "3.0.11.0"
+            "assemblyVersion": "3.0.12.0",
+            "fileVersion": "3.0.12.0"
           }
         }
       },
@@ -424,9 +424,9 @@
           "System.Runtime": "4.3.0"
         }
       },
-      "GoogleMapsClient/1.1.7": {
+      "GoogleMapsClient/1.1.9": {
         "dependencies": {
-          "RestWrapper": "3.0.11",
+          "RestWrapper": "3.0.12",
           "System.Text.Json": "7.0.3"
         },
         "runtime": {
@@ -455,12 +455,12 @@
       "path": "microsoft.netcore.targets/1.1.0",
       "hashPath": "microsoft.netcore.targets.1.1.0.nupkg.sha512"
     },
-    "RestWrapper/3.0.11": {
+    "RestWrapper/3.0.12": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-0g8oazWxkAZ88XhKk3tdZCzqOKS3qbOe2hYjjk7nymJxqDBcplV1c03KWxY/Ns77C5bt2qShF3cio6LKFgR56g==",
-      "path": "restwrapper/3.0.11",
-      "hashPath": "restwrapper.3.0.11.nupkg.sha512"
+      "sha512": "sha512-Z/ggae1CKUNxnQrsIuzMKjsan9pkn1sdYBO+4scJudzR/i7OcAPjpQT+ux1sNJycGHaKX+OK0E+9wXtWLdqvWA==",
+      "path": "restwrapper/3.0.12",
+      "hashPath": "restwrapper.3.0.12.nupkg.sha512"
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {
       "type": "package",
@@ -805,7 +805,7 @@
       "path": "system.threading.tasks/4.3.0",
       "hashPath": "system.threading.tasks.4.3.0.nupkg.sha512"
     },
-    "GoogleMapsClient/1.1.7": {
+    "GoogleMapsClient/1.1.9": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

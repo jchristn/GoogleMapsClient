@@ -21,7 +21,7 @@
           "buildTransitive/net462/_._": {}
         }
       },
-      "RestWrapper/3.0.11": {
+      "RestWrapper/3.0.12": {
         "type": "package",
         "dependencies": {
           "System.Net.Http": "4.3.4",
@@ -327,7 +327,7 @@
           "buildTransitive/net462/_._": {}
         }
       },
-      "RestWrapper/3.0.11": {
+      "RestWrapper/3.0.12": {
         "type": "package",
         "dependencies": {
           "System.Net.Http": "4.3.4",
@@ -663,7 +663,7 @@
           "buildTransitive/net462/_._": {}
         }
       },
-      "RestWrapper/3.0.11": {
+      "RestWrapper/3.0.12": {
         "type": "package",
         "dependencies": {
           "System.Net.Http": "4.3.4",
@@ -1007,7 +1007,7 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "RestWrapper/3.0.11": {
+      "RestWrapper/3.0.12": {
         "type": "package",
         "dependencies": {
           "System.Net.Http": "4.3.4",
@@ -1891,7 +1891,7 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "RestWrapper/3.0.11": {
+      "RestWrapper/3.0.12": {
         "type": "package",
         "dependencies": {
           "System.Net.Http": "4.3.4",
@@ -2791,10 +2791,10 @@
         "runtime.json"
       ]
     },
-    "RestWrapper/3.0.11": {
-      "sha512": "0g8oazWxkAZ88XhKk3tdZCzqOKS3qbOe2hYjjk7nymJxqDBcplV1c03KWxY/Ns77C5bt2qShF3cio6LKFgR56g==",
+    "RestWrapper/3.0.12": {
+      "sha512": "Z/ggae1CKUNxnQrsIuzMKjsan9pkn1sdYBO+4scJudzR/i7OcAPjpQT+ux1sNJycGHaKX+OK0E+9wXtWLdqvWA==",
       "type": "package",
-      "path": "restwrapper/3.0.11",
+      "path": "restwrapper/3.0.12",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2807,7 +2807,7 @@
         "lib/net7.0/RestWrapper.dll",
         "lib/netstandard2.1/RestWrapper.dll",
         "lib/netstandard2.1/RestWrapper.xml",
-        "restwrapper.3.0.11.nupkg.sha512",
+        "restwrapper.3.0.12.nupkg.sha512",
         "restwrapper.nuspec"
       ]
     },
@@ -5152,23 +5152,23 @@
   },
   "projectFileDependencyGroups": {
     ".NETFramework,Version=v4.6.2": [
-      "RestWrapper >= 3.0.11",
+      "RestWrapper >= 3.0.12",
       "System.Text.Json >= 7.0.3"
     ],
     ".NETFramework,Version=v4.7.2": [
-      "RestWrapper >= 3.0.11",
+      "RestWrapper >= 3.0.12",
       "System.Text.Json >= 7.0.3"
     ],
     ".NETFramework,Version=v4.8": [
-      "RestWrapper >= 3.0.11",
+      "RestWrapper >= 3.0.12",
       "System.Text.Json >= 7.0.3"
     ],
     "net6.0": [
-      "RestWrapper >= 3.0.11",
+      "RestWrapper >= 3.0.12",
       "System.Text.Json >= 7.0.3"
     ],
     "net7.0": [
-      "RestWrapper >= 3.0.11",
+      "RestWrapper >= 3.0.12",
       "System.Text.Json >= 7.0.3"
     ]
   },
@@ -5177,7 +5177,7 @@
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
-    "version": "1.1.7",
+    "version": "1.1.9",
     "restore": {
       "projectUniqueName": "C:\\Code\\Google\\GoogleMapsClient\\src\\GoogleMapsClient\\GoogleMapsClient.csproj",
       "projectName": "GoogleMapsClient",
@@ -5243,7 +5243,7 @@
         "dependencies": {
           "RestWrapper": {
             "target": "Package",
-            "version": "[3.0.11, )"
+            "version": "[3.0.12, )"
           },
           "System.Text.Json": {
             "target": "Package",
@@ -5287,7 +5287,7 @@
         "dependencies": {
           "RestWrapper": {
             "target": "Package",
-            "version": "[3.0.11, )"
+            "version": "[3.0.12, )"
           },
           "System.Text.Json": {
             "target": "Package",
@@ -5331,7 +5331,7 @@
         "dependencies": {
           "RestWrapper": {
             "target": "Package",
-            "version": "[3.0.11, )"
+            "version": "[3.0.12, )"
           },
           "System.Text.Json": {
             "target": "Package",
@@ -5345,7 +5345,7 @@
         "dependencies": {
           "RestWrapper": {
             "target": "Package",
-            "version": "[3.0.11, )"
+            "version": "[3.0.12, )"
           },
           "System.Text.Json": {
             "target": "Package",
@@ -5359,7 +5359,7 @@
         "dependencies": {
           "RestWrapper": {
             "target": "Package",
-            "version": "[3.0.11, )"
+            "version": "[3.0.12, )"
           },
           "System.Text.Json": {
             "target": "Package",

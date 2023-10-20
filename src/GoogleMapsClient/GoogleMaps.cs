@@ -199,7 +199,9 @@ namespace GoogleMapsClient
 
         private async Task<GoogleMapsResponse> GetGoogleMapsResponseAsync(HttpMethod method, string url, string body = null, int timeoutMs = 15000, CancellationToken token = default)
         {
+            token.ThrowIfCancellationRequested();
             string response = await GetRestResponseAsync(method, url, body, timeoutMs, token).ConfigureAwait(false);
+
             if (!String.IsNullOrEmpty(response))
             {
                 return SerializationHelper.DeserializeJson<GoogleMapsResponse>(response);
@@ -212,12 +214,16 @@ namespace GoogleMapsClient
 
         private async Task<string> GetRestResponseAsync(HttpMethod method, string url, string body = null, int timeoutMs = 15000, CancellationToken token = default)
         {
+            token.ThrowIfCancellationRequested();
+
             using (RestRequest req = new RestRequest(url, method))
             {
                 req.TimeoutMilliseconds = timeoutMs;
 
                 if (!String.IsNullOrEmpty(body))
                 {
+                    token.ThrowIfCancellationRequested();
+
                     using (RestResponse resp = await req.SendAsync(body, token).ConfigureAwait(false))
                     {
                         if (resp != null)
@@ -235,6 +241,8 @@ namespace GoogleMapsClient
                 }
                 else
                 {
+                    token.ThrowIfCancellationRequested();
+
                     using (RestResponse resp = await req.SendAsync(token).ConfigureAwait(false))
                     {
                         if (resp != null)

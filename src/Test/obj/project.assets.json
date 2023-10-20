@@ -21,7 +21,7 @@
           "buildTransitive/net462/_._": {}
         }
       },
-      "RestWrapper/3.0.11": {
+      "RestWrapper/3.0.12": {
         "type": "package",
         "dependencies": {
           "System.Net.Http": "4.3.4",
@@ -306,11 +306,11 @@
           }
         }
       },
-      "GoogleMapsClient/1.1.7": {
+      "GoogleMapsClient/1.1.9": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.6.2",
         "dependencies": {
-          "RestWrapper": "3.0.11",
+          "RestWrapper": "3.0.12",
           "System.Text.Json": "7.0.3"
         },
         "compile": {
@@ -341,7 +341,7 @@
           "buildTransitive/net462/_._": {}
         }
       },
-      "RestWrapper/3.0.11": {
+      "RestWrapper/3.0.12": {
         "type": "package",
         "dependencies": {
           "System.Net.Http": "4.3.4",
@@ -582,11 +582,11 @@
           }
         }
       },
-      "GoogleMapsClient/1.1.7": {
+      "GoogleMapsClient/1.1.9": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.6.2",
         "dependencies": {
-          "RestWrapper": "3.0.11",
+          "RestWrapper": "3.0.12",
           "System.Text.Json": "7.0.3"
         },
         "compile": {
@@ -617,7 +617,7 @@
           "buildTransitive/net462/_._": {}
         }
       },
-      "RestWrapper/3.0.11": {
+      "RestWrapper/3.0.12": {
         "type": "package",
         "dependencies": {
           "System.Net.Http": "4.3.4",
@@ -932,11 +932,11 @@
           }
         }
       },
-      "GoogleMapsClient/1.1.7": {
+      "GoogleMapsClient/1.1.9": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.7.2",
         "dependencies": {
-          "RestWrapper": "3.0.11",
+          "RestWrapper": "3.0.12",
           "System.Text.Json": "7.0.3"
         },
         "compile": {
@@ -967,7 +967,7 @@
           "buildTransitive/net462/_._": {}
         }
       },
-      "RestWrapper/3.0.11": {
+      "RestWrapper/3.0.12": {
         "type": "package",
         "dependencies": {
           "System.Net.Http": "4.3.4",
@@ -1238,11 +1238,11 @@
           }
         }
       },
-      "GoogleMapsClient/1.1.7": {
+      "GoogleMapsClient/1.1.9": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.7.2",
         "dependencies": {
-          "RestWrapper": "3.0.11",
+          "RestWrapper": "3.0.12",
           "System.Text.Json": "7.0.3"
         },
         "compile": {
@@ -1272,7 +1272,7 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "RestWrapper/3.0.11": {
+      "RestWrapper/3.0.12": {
         "type": "package",
         "dependencies": {
           "System.Net.Http": "4.3.4",
@@ -2136,11 +2136,11 @@
           }
         }
       },
-      "GoogleMapsClient/1.1.7": {
+      "GoogleMapsClient/1.1.9": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "RestWrapper": "3.0.11",
+          "RestWrapper": "3.0.12",
           "System.Text.Json": "7.0.3"
         },
         "compile": {
@@ -2184,7 +2184,7 @@
           }
         }
       },
-      "RestWrapper/3.0.11": {
+      "RestWrapper/3.0.12": {
         "type": "package",
         "dependencies": {
           "System.Net.Http": "4.3.4",
@@ -3215,11 +3215,11 @@
           }
         }
       },
-      "GoogleMapsClient/1.1.7": {
+      "GoogleMapsClient/1.1.9": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "RestWrapper": "3.0.11",
+          "RestWrapper": "3.0.12",
           "System.Text.Json": "7.0.3"
         },
         "compile": {
@@ -3249,7 +3249,7 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "RestWrapper/3.0.11": {
+      "RestWrapper/3.0.12": {
         "type": "package",
         "dependencies": {
           "System.Net.Http": "4.3.4",
@@ -4093,11 +4093,11 @@
           }
         }
       },
-      "GoogleMapsClient/1.1.7": {
+      "GoogleMapsClient/1.1.9": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
-          "RestWrapper": "3.0.11",
+          "RestWrapper": "3.0.12",
           "System.Text.Json": "7.0.3"
         },
         "compile": {
@@ -4141,7 +4141,7 @@
           }
         }
       },
-      "RestWrapper/3.0.11": {
+      "RestWrapper/3.0.12": {
         "type": "package",
         "dependencies": {
           "System.Net.Http": "4.3.4",
@@ -5152,11 +5152,11 @@
           }
         }
       },
-      "GoogleMapsClient/1.1.7": {
+      "GoogleMapsClient/1.1.9": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
-          "RestWrapper": "3.0.11",
+          "RestWrapper": "3.0.12",
           "System.Text.Json": "7.0.3"
         },
         "compile": {
@@ -5260,10 +5260,10 @@
         "ref/xamarinwatchos10/_._"
       ]
     },
-    "RestWrapper/3.0.11": {
-      "sha512": "0g8oazWxkAZ88XhKk3tdZCzqOKS3qbOe2hYjjk7nymJxqDBcplV1c03KWxY/Ns77C5bt2qShF3cio6LKFgR56g==",
+    "RestWrapper/3.0.12": {
+      "sha512": "Z/ggae1CKUNxnQrsIuzMKjsan9pkn1sdYBO+4scJudzR/i7OcAPjpQT+ux1sNJycGHaKX+OK0E+9wXtWLdqvWA==",
       "type": "package",
-      "path": "restwrapper/3.0.11",
+      "path": "restwrapper/3.0.12",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -5276,7 +5276,7 @@
         "lib/net7.0/RestWrapper.dll",
         "lib/netstandard2.1/RestWrapper.dll",
         "lib/netstandard2.1/RestWrapper.xml",
-        "restwrapper.3.0.11.nupkg.sha512",
+        "restwrapper.3.0.12.nupkg.sha512",
         "restwrapper.nuspec"
       ]
     },
@@ -8223,7 +8223,7 @@
         "version.txt"
       ]
     },
-    "GoogleMapsClient/1.1.7": {
+    "GoogleMapsClient/1.1.9": {
       "type": "project",
       "path": "../GoogleMapsClient/GoogleMapsClient.csproj",
       "msbuildProject": "../GoogleMapsClient/GoogleMapsClient.csproj"
@@ -8231,16 +8231,16 @@
   },
   "projectFileDependencyGroups": {
     ".NETFramework,Version=v4.6.2": [
-      "GoogleMapsClient >= 1.1.7"
+      "GoogleMapsClient >= 1.1.9"
     ],
     ".NETFramework,Version=v4.7.2": [
-      "GoogleMapsClient >= 1.1.7"
+      "GoogleMapsClient >= 1.1.9"
     ],
     "net6.0": [
-      "GoogleMapsClient >= 1.1.7"
+      "GoogleMapsClient >= 1.1.9"
     ],
     "net7.0": [
-      "GoogleMapsClient >= 1.1.7"
+      "GoogleMapsClient >= 1.1.9"
     ]
   },
   "packageFolders": {
