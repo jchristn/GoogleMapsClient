@@ -19,3 +19,4 @@ C:\Code\Google\GoogleMapsClient\src\GoogleMapsClient\obj\Release\net48\GoogleMap
 C:\Code\Google\GoogleMapsClient\src\GoogleMapsClient\obj\Release\net48\GoogleMapsClient.csproj.CopyComplete
 C:\Code\Google\GoogleMapsClient\src\GoogleMapsClient\obj\Release\net48\GoogleMapsClient.dll
 C:\Code\Google\GoogleMapsClient\src\GoogleMapsClient\obj\Release\net48\GoogleMapsClient.pdb
+C:\Code\Google\GoogleMapsClient\src\GoogleMapsClient\bin\Release\net48\Timestamps.dll

@@ -40,7 +40,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="RestWrapper" Version="3.0.13" />
+		<PackageReference Include="RestWrapper" Version="3.0.12" />
 		<PackageReference Include="System.Text.Json" Version="7.0.3" />
 	</ItemGroup>
 

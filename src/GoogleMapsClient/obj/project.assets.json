@@ -21,17 +21,18 @@
           "buildTransitive/net462/_._": {}
         }
       },
-      "RestWrapper/3.0.12": {
+      "RestWrapper/3.0.13": {
         "type": "package",
         "dependencies": {
           "System.Net.Http": "4.3.4",
-          "System.Text.Json": "6.0.5"
+          "System.Text.Json": "7.0.3",
+          "Timestamps": "1.0.4"
         },
         "compile": {
-          "lib/net461/RestWrapper.dll": {}
+          "lib/net462/RestWrapper.dll": {}
         },
         "runtime": {
-          "lib/net461/RestWrapper.dll": {}
+          "lib/net462/RestWrapper.dll": {}
         }
       },
       "System.Buffers/4.5.1": {
@@ -305,6 +306,22 @@
             "related": ".xml"
           }
         }
+      },
+      "Timestamps/1.0.4": {
+        "type": "package",
+        "compile": {
+          "lib/net462/Timestamps.dll": {}
+        },
+        "runtime": {
+          "lib/net462/Timestamps.dll": {}
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
       }
     },
     ".NETFramework,Version=v4.7.2": {
@@ -327,17 +344,18 @@
           "buildTransitive/net462/_._": {}
         }
       },
-      "RestWrapper/3.0.12": {
+      "RestWrapper/3.0.13": {
         "type": "package",
         "dependencies": {
           "System.Net.Http": "4.3.4",
-          "System.Text.Json": "6.0.5"
+          "System.Text.Json": "7.0.3",
+          "Timestamps": "1.0.4"
         },
         "compile": {
-          "lib/net461/RestWrapper.dll": {}
+          "lib/net462/RestWrapper.dll": {}
         },
         "runtime": {
-          "lib/net461/RestWrapper.dll": {}
+          "lib/net462/RestWrapper.dll": {}
         }
       },
       "System.Buffers/4.5.1": {
@@ -641,6 +659,22 @@
             "related": ".xml"
           }
         }
+      },
+      "Timestamps/1.0.4": {
+        "type": "package",
+        "compile": {
+          "lib/net462/Timestamps.dll": {}
+        },
+        "runtime": {
+          "lib/net462/Timestamps.dll": {}
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
       }
     },
     ".NETFramework,Version=v4.8": {
@@ -663,11 +697,12 @@
           "buildTransitive/net462/_._": {}
         }
       },
-      "RestWrapper/3.0.12": {
+      "RestWrapper/3.0.13": {
         "type": "package",
         "dependencies": {
           "System.Net.Http": "4.3.4",
-          "System.Text.Json": "6.0.5"
+          "System.Text.Json": "7.0.3",
+          "Timestamps": "1.0.4"
         },
         "frameworkAssemblies": [
           "System.IO",
@@ -986,6 +1021,22 @@
             "related": ".xml"
           }
         }
+      },
+      "Timestamps/1.0.4": {
+        "type": "package",
+        "compile": {
+          "lib/net48/Timestamps.dll": {}
+        },
+        "runtime": {
+          "lib/net48/Timestamps.dll": {}
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
       }
     },
     "net6.0": {
@@ -1007,11 +1058,12 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "RestWrapper/3.0.12": {
+      "RestWrapper/3.0.13": {
         "type": "package",
         "dependencies": {
           "System.Net.Http": "4.3.4",
-          "System.Text.Json": "6.0.5"
+          "System.Text.Json": "7.0.3",
+          "Timestamps": "1.0.4"
         },
         "compile": {
           "lib/net6.0/RestWrapper.dll": {}
@@ -1870,6 +1922,22 @@
             "related": ".xml"
           }
         }
+      },
+      "Timestamps/1.0.4": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Timestamps.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/Timestamps.dll": {}
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
       }
     },
     "net7.0": {
@@ -1891,11 +1959,12 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "RestWrapper/3.0.12": {
+      "RestWrapper/3.0.13": {
         "type": "package",
         "dependencies": {
           "System.Net.Http": "4.3.4",
-          "System.Text.Json": "6.0.5"
+          "System.Text.Json": "7.0.3",
+          "Timestamps": "1.0.4"
         },
         "compile": {
           "lib/net7.0/RestWrapper.dll": {}
@@ -2734,6 +2803,22 @@
             "related": ".xml"
           }
         }
+      },
+      "Timestamps/1.0.4": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/Timestamps.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0/Timestamps.dll": {}
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
       }
     }
   },
@@ -2791,23 +2876,23 @@
         "runtime.json"
       ]
     },
-    "RestWrapper/3.0.12": {
-      "sha512": "Z/ggae1CKUNxnQrsIuzMKjsan9pkn1sdYBO+4scJudzR/i7OcAPjpQT+ux1sNJycGHaKX+OK0E+9wXtWLdqvWA==",
+    "RestWrapper/3.0.13": {
+      "sha512": "RpbI/TYBeBgkskqrpluY/W23hwXBBWgmEV5WzPsdcwn5D3he0HkameaESoD6ZgKVFjwmKOZKCiKXzv0/5xjz4w==",
       "type": "package",
-      "path": "restwrapper/3.0.12",
+      "path": "restwrapper/3.0.13",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.md",
         "README.md",
         "icon.png",
-        "lib/net461/RestWrapper.dll",
+        "lib/net462/RestWrapper.dll",
         "lib/net48/RestWrapper.dll",
         "lib/net6.0/RestWrapper.dll",
         "lib/net7.0/RestWrapper.dll",
         "lib/netstandard2.1/RestWrapper.dll",
         "lib/netstandard2.1/RestWrapper.xml",
-        "restwrapper.3.0.12.nupkg.sha512",
+        "restwrapper.3.0.13.nupkg.sha512",
         "restwrapper.nuspec"
       ]
     },
@@ -5148,27 +5233,52 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "Timestamps/1.0.4": {
+      "sha512": "RU4TGeX0nBwfoi5a0PleVbtaUStV1sCUStYqO9nTAX5OwqQu9N2Wfpz5nGRDEjjX6tqzO5f8SaB/4fUyos4mFg==",
+      "type": "package",
+      "path": "timestamps/1.0.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "README.md",
+        "content/Assets/logo.ico",
+        "contentFiles/any/net462/Assets/logo.ico",
+        "contentFiles/any/net48/Assets/logo.ico",
+        "contentFiles/any/net6.0/Assets/logo.ico",
+        "contentFiles/any/net7.0/Assets/logo.ico",
+        "contentFiles/any/netstandard2.1/Assets/logo.ico",
+        "lib/net462/Timestamps.dll",
+        "lib/net48/Timestamps.dll",
+        "lib/net6.0/Timestamps.dll",
+        "lib/net7.0/Timestamps.dll",
+        "lib/netstandard2.1/Timestamps.dll",
+        "logo.png",
+        "timestamps.1.0.4.nupkg.sha512",
+        "timestamps.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     ".NETFramework,Version=v4.6.2": [
-      "RestWrapper >= 3.0.12",
+      "RestWrapper >= 3.0.13",
       "System.Text.Json >= 7.0.3"
     ],
     ".NETFramework,Version=v4.7.2": [
-      "RestWrapper >= 3.0.12",
+      "RestWrapper >= 3.0.13",
       "System.Text.Json >= 7.0.3"
     ],
     ".NETFramework,Version=v4.8": [
-      "RestWrapper >= 3.0.12",
+      "RestWrapper >= 3.0.13",
       "System.Text.Json >= 7.0.3"
     ],
     "net6.0": [
-      "RestWrapper >= 3.0.12",
+      "RestWrapper >= 3.0.13",
       "System.Text.Json >= 7.0.3"
     ],
     "net7.0": [
-      "RestWrapper >= 3.0.12",
+      "RestWrapper >= 3.0.13",
       "System.Text.Json >= 7.0.3"
     ]
   },
@@ -5177,7 +5287,7 @@
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
-    "version": "1.1.9",
+    "version": "1.1.10",
     "restore": {
       "projectUniqueName": "C:\\Code\\Google\\GoogleMapsClient\\src\\GoogleMapsClient\\GoogleMapsClient.csproj",
       "projectName": "GoogleMapsClient",
@@ -5243,7 +5353,7 @@
         "dependencies": {
           "RestWrapper": {
             "target": "Package",
-            "version": "[3.0.12, )"
+            "version": "[3.0.13, )"
           },
           "System.Text.Json": {
             "target": "Package",
@@ -5287,7 +5397,7 @@
         "dependencies": {
           "RestWrapper": {
             "target": "Package",
-            "version": "[3.0.12, )"
+            "version": "[3.0.13, )"
           },
           "System.Text.Json": {
             "target": "Package",
@@ -5331,7 +5441,7 @@
         "dependencies": {
           "RestWrapper": {
             "target": "Package",
-            "version": "[3.0.12, )"
+            "version": "[3.0.13, )"
           },
           "System.Text.Json": {
             "target": "Package",
@@ -5345,7 +5455,7 @@
         "dependencies": {
           "RestWrapper": {
             "target": "Package",
-            "version": "[3.0.12, )"
+            "version": "[3.0.13, )"
           },
           "System.Text.Json": {
             "target": "Package",
@@ -5359,7 +5469,7 @@
         "dependencies": {
           "RestWrapper": {
             "target": "Package",
-            "version": "[3.0.12, )"
+            "version": "[3.0.13, )"
           },
           "System.Text.Json": {
             "target": "Package",

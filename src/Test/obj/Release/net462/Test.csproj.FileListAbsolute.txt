@@ -29,3 +29,4 @@ C:\Code\Google\GoogleMapsClient\src\Test\obj\Release\net462\Test.sourcelink.json
 C:\Code\Google\GoogleMapsClient\src\Test\obj\Release\net462\Test.csproj.CopyComplete
 C:\Code\Google\GoogleMapsClient\src\Test\obj\Release\net462\Test.exe
 C:\Code\Google\GoogleMapsClient\src\Test\obj\Release\net462\Test.pdb
+C:\Code\Google\GoogleMapsClient\src\Test\bin\Release\net462\Timestamps.dll
