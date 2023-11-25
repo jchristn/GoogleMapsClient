@@ -37,3 +37,7 @@ C:\Code\Google\GoogleMapsClient\src\Test\obj\Debug\net7.0\Test.pdb
 C:\Code\Google\GoogleMapsClient\src\Test\obj\Debug\net7.0\Test.genruntimeconfig.cache
 C:\Code\Google\GoogleMapsClient\src\Test\obj\Debug\net7.0\ref\Test.dll
 C:\Code\Google\GoogleMapsClient\src\Test\bin\Debug\net7.0\RestWrapper.dll
+C:\Code\Google\GoogleMapsClient\src\Test\bin\Debug\net7.0\Timestamps.dll
+C:\Code\Google\GoogleMapsClient\src\Test\bin\Debug\net7.0\System.Text.Encodings.Web.dll
+C:\Code\Google\GoogleMapsClient\src\Test\bin\Debug\net7.0\System.Text.Json.dll
+C:\Code\Google\GoogleMapsClient\src\Test\bin\Debug\net7.0\runtimes\browser\lib\net7.0\System.Text.Encodings.Web.dll

@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>GoogleMapsClient</id>
+    <version>1.1.13</version>
+    <authors>Joel Christner</authors>
+    <license type="file">LICENSE.md</license>
+    <licenseUrl>https://aka.ms/deprecateLicenseUrl</licenseUrl>
+    <icon>icon.png</icon>
+    <readme>README.md</readme>
+    <projectUrl>https://github.com/jchristn/GoogleMapsClient</projectUrl>
+    <description>I needed a simple way to parse addresses and resolve coordinates to an address.  Plug in a Google Maps API key and you're all set.</description>
+    <releaseNotes>Dependency changes, retarget</releaseNotes>
+    <copyright>(c)2023 Joel Christner</copyright>
+    <tags>google maps coordinates address map coordinate</tags>
+    <repository type="Github" url="https://github.com/jchristn/GoogleMapsClient" commit="0edda3fab0c7908e0e0a90d20b073a882757d0d2" />
+    <dependencies>
+      <group targetFramework=".NETFramework4.6.2">
+        <dependency id="RestWrapper" version="3.0.17" exclude="Build,Analyzers" />
+        <dependency id="System.Text.Json" version="8.0.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETFramework4.7.2">
+        <dependency id="RestWrapper" version="3.0.17" exclude="Build,Analyzers" />
+        <dependency id="System.Text.Json" version="8.0.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETFramework4.8">
+        <dependency id="RestWrapper" version="3.0.17" exclude="Build,Analyzers" />
+        <dependency id="System.Text.Json" version="8.0.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="net6.0">
+        <dependency id="RestWrapper" version="3.0.17" exclude="Build,Analyzers" />
+        <dependency id="System.Text.Json" version="8.0.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="net7.0">
+        <dependency id="RestWrapper" version="3.0.17" exclude="Build,Analyzers" />
+        <dependency id="System.Text.Json" version="8.0.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="net8.0">
+        <dependency id="RestWrapper" version="3.0.17" exclude="Build,Analyzers" />
+        <dependency id="System.Text.Json" version="8.0.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="System.IO" targetFramework=".NETFramework4.7.2, .NETFramework4.8" />
+      <frameworkAssembly assemblyName="System.Net.Http" targetFramework=".NETFramework4.7.2, .NETFramework4.8" />
+      <frameworkAssembly assemblyName="System.Runtime" targetFramework=".NETFramework4.7.2, .NETFramework4.8" />
+      <frameworkAssembly assemblyName="System.Security.Cryptography.Algorithms" targetFramework=".NETFramework4.7.2, .NETFramework4.8" />
+      <frameworkAssembly assemblyName="System.Security.Cryptography.Encoding" targetFramework=".NETFramework4.7.2, .NETFramework4.8" />
+      <frameworkAssembly assemblyName="System.Security.Cryptography.Primitives" targetFramework=".NETFramework4.7.2, .NETFramework4.8" />
+      <frameworkAssembly assemblyName="System.Security.Cryptography.X509Certificates" targetFramework=".NETFramework4.7.2, .NETFramework4.8" />
+    </frameworkAssemblies>
+  </metadata>
+  <files>
+    <file src="C:\Code\Google\GoogleMapsClient\src\GoogleMapsClient\bin\Debug\net462\GoogleMapsClient.pdb" target="lib\net462\GoogleMapsClient.pdb" />
+    <file src="C:\Code\Google\GoogleMapsClient\src\GoogleMapsClient\bin\Debug\net472\GoogleMapsClient.pdb" target="lib\net472\GoogleMapsClient.pdb" />
+    <file src="C:\Code\Google\GoogleMapsClient\src\GoogleMapsClient\bin\Debug\net48\GoogleMapsClient.pdb" target="lib\net48\GoogleMapsClient.pdb" />
+    <file src="C:\Code\Google\GoogleMapsClient\src\GoogleMapsClient\bin\Debug\net6.0\GoogleMapsClient.pdb" target="lib\net6.0\GoogleMapsClient.pdb" />
+    <file src="C:\Code\Google\GoogleMapsClient\src\GoogleMapsClient\bin\Debug\net7.0\GoogleMapsClient.pdb" target="lib\net7.0\GoogleMapsClient.pdb" />
+    <file src="C:\Code\Google\GoogleMapsClient\src\GoogleMapsClient\bin\Debug\net8.0\GoogleMapsClient.pdb" target="lib\net8.0\GoogleMapsClient.pdb" />
+  </files>
+</package>

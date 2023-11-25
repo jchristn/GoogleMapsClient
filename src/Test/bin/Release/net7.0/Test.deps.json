@@ -8,7 +8,7 @@
     ".NETCoreApp,Version=v7.0": {
       "Test/1.0.0": {
         "dependencies": {
-          "GoogleMapsClient": "1.1.10"
+          "GoogleMapsClient": "1.1.13"
         },
         "runtime": {
           "Test.dll": {}
@@ -16,16 +16,16 @@
       },
       "Microsoft.NETCore.Platforms/1.1.1": {},
       "Microsoft.NETCore.Targets/1.1.0": {},
-      "RestWrapper/3.0.13": {
+      "RestWrapper/3.0.17": {
         "dependencies": {
           "System.Net.Http": "4.3.4",
-          "System.Text.Json": "7.0.3",
-          "Timestamps": "1.0.4"
+          "System.Text.Json": "8.0.0",
+          "Timestamps": "1.0.6"
         },
         "runtime": {
           "lib/net7.0/RestWrapper.dll": {
-            "assemblyVersion": "3.0.13.0",
-            "fileVersion": "3.0.13.0"
+            "assemblyVersion": "3.0.17.0",
+            "fileVersion": "3.0.17.0"
           }
         }
       },
@@ -406,10 +406,31 @@
           "System.Runtime": "4.3.0"
         }
       },
-      "System.Text.Encodings.Web/7.0.0": {},
-      "System.Text.Json/7.0.3": {
+      "System.Text.Encodings.Web/8.0.0": {
+        "runtime": {
+          "lib/net7.0/System.Text.Encodings.Web.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.53103"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/browser/lib/net7.0/System.Text.Encodings.Web.dll": {
+            "rid": "browser",
+            "assetType": "runtime",
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.53103"
+          }
+        }
+      },
+      "System.Text.Json/8.0.0": {
         "dependencies": {
-          "System.Text.Encodings.Web": "7.0.0"
+          "System.Text.Encodings.Web": "8.0.0"
+        },
+        "runtime": {
+          "lib/net7.0/System.Text.Json.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.53103"
+          }
         }
       },
       "System.Threading/4.3.0": {
@@ -425,18 +446,18 @@
           "System.Runtime": "4.3.0"
         }
       },
-      "Timestamps/1.0.4": {
+      "Timestamps/1.0.6": {
         "runtime": {
           "lib/net7.0/Timestamps.dll": {
-            "assemblyVersion": "1.0.4.0",
-            "fileVersion": "1.0.4.0"
+            "assemblyVersion": "1.0.6.0",
+            "fileVersion": "1.0.6.0"
           }
         }
       },
-      "GoogleMapsClient/1.1.10": {
+      "GoogleMapsClient/1.1.13": {
         "dependencies": {
-          "RestWrapper": "3.0.13",
-          "System.Text.Json": "7.0.3"
+          "RestWrapper": "3.0.17",
+          "System.Text.Json": "8.0.0"
         },
         "runtime": {
           "GoogleMapsClient.dll": {}
@@ -464,12 +485,12 @@
       "path": "microsoft.netcore.targets/1.1.0",
       "hashPath": "microsoft.netcore.targets.1.1.0.nupkg.sha512"
     },
-    "RestWrapper/3.0.13": {
+    "RestWrapper/3.0.17": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-RpbI/TYBeBgkskqrpluY/W23hwXBBWgmEV5WzPsdcwn5D3he0HkameaESoD6ZgKVFjwmKOZKCiKXzv0/5xjz4w==",
-      "path": "restwrapper/3.0.13",
-      "hashPath": "restwrapper.3.0.13.nupkg.sha512"
+      "sha512": "sha512-UKKzX/4P12Z7g/Y9fmMZ+WpaO4RimWsrzOzrPmBgvgcEI2QlLkIh1ubRhSHH40kZXXlndRY7ivtIbNXX5dsu7w==",
+      "path": "restwrapper/3.0.17",
+      "hashPath": "restwrapper.3.0.17.nupkg.sha512"
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {
       "type": "package",
@@ -786,19 +807,19 @@
       "path": "system.text.encoding/4.3.0",
       "hashPath": "system.text.encoding.4.3.0.nupkg.sha512"
     },
-    "System.Text.Encodings.Web/7.0.0": {
+    "System.Text.Encodings.Web/8.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-OP6umVGxc0Z0MvZQBVigj4/U31Pw72ITihDWP9WiWDm+q5aoe0GaJivsfYGq53o6dxH7DcXWiCTl7+0o2CGdmg==",
-      "path": "system.text.encodings.web/7.0.0",
-      "hashPath": "system.text.encodings.web.7.0.0.nupkg.sha512"
+      "sha512": "sha512-yev/k9GHAEGx2Rg3/tU6MQh4HGBXJs70y7j1LaM1i/ER9po+6nnQ6RRqTJn1E7Xu0fbIFK80Nh5EoODxrbxwBQ==",
+      "path": "system.text.encodings.web/8.0.0",
+      "hashPath": "system.text.encodings.web.8.0.0.nupkg.sha512"
     },
-    "System.Text.Json/7.0.3": {
+    "System.Text.Json/8.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-AyjhwXN1zTFeIibHimfJn6eAsZ7rTBib79JQpzg8WAuR/HKDu9JGNHTuu3nbbXQ/bgI+U4z6HtZmCHNXB1QXrQ==",
-      "path": "system.text.json/7.0.3",
-      "hashPath": "system.text.json.7.0.3.nupkg.sha512"
+      "sha512": "sha512-OdrZO2WjkiEG6ajEFRABTRCi/wuXQPxeV6g8xvUJqdxMvvuCCEk86zPla8UiIQJz3durtUEbNyY/3lIhS0yZvQ==",
+      "path": "system.text.json/8.0.0",
+      "hashPath": "system.text.json.8.0.0.nupkg.sha512"
     },
     "System.Threading/4.3.0": {
       "type": "package",
@@ -814,14 +835,14 @@
       "path": "system.threading.tasks/4.3.0",
       "hashPath": "system.threading.tasks.4.3.0.nupkg.sha512"
     },
-    "Timestamps/1.0.4": {
+    "Timestamps/1.0.6": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-RU4TGeX0nBwfoi5a0PleVbtaUStV1sCUStYqO9nTAX5OwqQu9N2Wfpz5nGRDEjjX6tqzO5f8SaB/4fUyos4mFg==",
-      "path": "timestamps/1.0.4",
-      "hashPath": "timestamps.1.0.4.nupkg.sha512"
+      "sha512": "sha512-n/8G1b7gCqkOhW2xUVPY3jqVYdLckk0/StngS8GwOHbgEmDOpSVDRjxPELS/Hda2W+lMPY37+RWXCbKhDWnzHg==",
+      "path": "timestamps/1.0.6",
+      "hashPath": "timestamps.1.0.6.nupkg.sha512"
     },
-    "GoogleMapsClient/1.1.10": {
+    "GoogleMapsClient/1.1.13": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

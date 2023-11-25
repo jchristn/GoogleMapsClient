@@ -24,3 +24,4 @@ C:\Code\Google\GoogleMapsClient\src\GoogleMapsClient\obj\Debug\net462\GoogleMaps
 C:\Code\Google\GoogleMapsClient\src\GoogleMapsClient\obj\Debug\net462\GoogleMapsClient.csproj.CopyComplete
 C:\Code\Google\GoogleMapsClient\src\GoogleMapsClient\obj\Debug\net462\GoogleMapsClient.dll
 C:\Code\Google\GoogleMapsClient\src\GoogleMapsClient\obj\Debug\net462\GoogleMapsClient.pdb
+C:\Code\Google\GoogleMapsClient\src\GoogleMapsClient\bin\Debug\net462\Timestamps.dll

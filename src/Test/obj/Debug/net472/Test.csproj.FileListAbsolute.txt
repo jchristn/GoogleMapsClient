@@ -49,3 +49,4 @@ C:\Code\Google\GoogleMapsClient\src\Test\obj\Debug\net472\Test.csproj.CopyComple
 C:\Code\Google\GoogleMapsClient\src\Test\obj\Debug\net472\Test.exe
 C:\Code\Google\GoogleMapsClient\src\Test\obj\Debug\net472\Test.pdb
 C:\Code\Google\GoogleMapsClient\src\Test\bin\Debug\net472\RestWrapper.dll
+C:\Code\Google\GoogleMapsClient\src\Test\bin\Debug\net472\Timestamps.dll

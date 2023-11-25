@@ -39,3 +39,4 @@ C:\Code\Google\GoogleMapsClient\src\GoogleMapsClient\obj\Debug\net472\GoogleMaps
 C:\Code\Google\GoogleMapsClient\src\GoogleMapsClient\obj\Debug\net472\GoogleMapsClient.dll
 C:\Code\Google\GoogleMapsClient\src\GoogleMapsClient\obj\Debug\net472\GoogleMapsClient.pdb
 C:\Code\Google\GoogleMapsClient\src\GoogleMapsClient\bin\Debug\net472\RestWrapper.dll
+C:\Code\Google\GoogleMapsClient\src\GoogleMapsClient\bin\Debug\net472\Timestamps.dll
