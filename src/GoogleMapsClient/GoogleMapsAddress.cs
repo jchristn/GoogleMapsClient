@@ -103,12 +103,6 @@ namespace GoogleMapsClient
 
         #endregion
 
-        #region Private-Members
-
-        private GoogleMapsResponse _GoogleMapsResponse = null;
-
-        #endregion
-
         #region Constructors-and-Factories
 
         /// <summary>
@@ -127,7 +121,7 @@ namespace GoogleMapsClient
         {
             if (resp == null) throw new ArgumentNullException(nameof(resp));
 
-            _GoogleMapsResponse = resp;
+            GoogleResponse = resp;
 
             if (resp.Status.Equals("OK") 
                 && resp.Results != null 

@@ -47,6 +47,12 @@ namespace GoogleMapsClient
             public GeometryComponent Geometry { get; set; } = null;
 
             /// <summary>
+            /// Partial Match.
+            /// </summary>
+            [JsonPropertyName("partial_match")]
+            public bool? PartialMatch { get; set; } = null;
+
+            /// <summary>
             /// Google place ID.
             /// </summary>
             [JsonPropertyName("place_id")]
