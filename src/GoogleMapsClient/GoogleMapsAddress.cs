@@ -87,6 +87,11 @@ namespace GoogleMapsClient
         public string Postal { get; set; } = null;
 
         /// <summary>
+        /// True if the geocoder did not return an exact match for the original request.
+        /// </summary>
+        public bool? PartialMatch { get; set; } = null;
+
+        /// <summary>
         /// Coordinates for the Northeast boundary.
         /// </summary>
         public GoogleMapsCoordinates NortheastBoundary { get; set; } = null;
@@ -195,6 +200,8 @@ namespace GoogleMapsClient
                         Longitude = result.Geometry.Location.Longitude;
                     } 
                 }
+
+                PartialMatch = result.PartialMatch;
             }
         }
 
