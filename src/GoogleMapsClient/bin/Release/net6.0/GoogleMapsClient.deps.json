@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
-      "GoogleMapsClient/1.1.13": {
+      "GoogleMapsClient/1.1.14": {
         "dependencies": {
           "RestWrapper": "3.0.17",
           "System.Text.Json": "8.0.0"
@@ -463,7 +463,7 @@
     }
   },
   "libraries": {
-    "GoogleMapsClient/1.1.13": {
+    "GoogleMapsClient/1.1.14": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -4,6 +4,8 @@
 
 I needed a simple way to parse addresses and resolve coordinates to an address.  Plug in a Google Maps API key and you're all set.
 
+Special thanks to @jorgeaponte and the community for helping improve this library!
+
 ## New in v1.1.0
 
 - Retarget to include .NET 6.0, .NET 7.0
