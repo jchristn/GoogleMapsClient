@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>GoogleMapsClient</id>
+    <version>1.1.15</version>
+    <authors>Joel Christner</authors>
+    <license type="file">LICENSE.md</license>
+    <licenseUrl>https://aka.ms/deprecateLicenseUrl</licenseUrl>
+    <icon>icon.png</icon>
+    <readme>README.md</readme>
+    <projectUrl>https://github.com/jchristn/GoogleMapsClient</projectUrl>
+    <description>I needed a simple way to parse addresses and resolve coordinates to an address.  Plug in a Google Maps API key and you're all set.</description>
+    <releaseNotes>Dependency changes, retarget</releaseNotes>
+    <copyright>(c)2025 Joel Christner</copyright>
+    <tags>google maps coordinates address map coordinate</tags>
+    <repository type="Github" url="https://github.com/jchristn/GoogleMapsClient" commit="8776c7bfe7fda421db45f578e337d595bc86aee1" />
+    <dependencies>
+      <group targetFramework=".NETFramework4.6.2">
+        <dependency id="RestWrapper" version="3.1.8" exclude="Build,Analyzers" />
+        <dependency id="System.Text.Json" version="10.0.1" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETFramework4.7.2">
+        <dependency id="RestWrapper" version="3.1.8" exclude="Build,Analyzers" />
+        <dependency id="System.Text.Json" version="10.0.1" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETFramework4.8">
+        <dependency id="RestWrapper" version="3.1.8" exclude="Build,Analyzers" />
+        <dependency id="System.Text.Json" version="10.0.1" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="net8.0">
+        <dependency id="RestWrapper" version="3.1.8" exclude="Build,Analyzers" />
+        <dependency id="System.Text.Json" version="10.0.1" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="net10.0">
+        <dependency id="RestWrapper" version="3.1.8" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="System.IO" targetFramework=".NETFramework4.7.2, .NETFramework4.8" />
+      <frameworkAssembly assemblyName="System.Net.Http" targetFramework=".NETFramework4.7.2, .NETFramework4.8" />
+      <frameworkAssembly assemblyName="System.Runtime" targetFramework=".NETFramework4.7.2, .NETFramework4.8" />
+      <frameworkAssembly assemblyName="System.Security.Cryptography.Algorithms" targetFramework=".NETFramework4.7.2, .NETFramework4.8" />
+      <frameworkAssembly assemblyName="System.Security.Cryptography.Encoding" targetFramework=".NETFramework4.7.2, .NETFramework4.8" />
+      <frameworkAssembly assemblyName="System.Security.Cryptography.Primitives" targetFramework=".NETFramework4.7.2, .NETFramework4.8" />
+      <frameworkAssembly assemblyName="System.Security.Cryptography.X509Certificates" targetFramework=".NETFramework4.7.2, .NETFramework4.8" />
+    </frameworkAssemblies>
+  </metadata>
+  <files>
+    <file src="C:\Code\Google\GoogleMapsClient\src\GoogleMapsClient\bin\Release\net10.0\GoogleMapsClient.dll" target="lib\net10.0\GoogleMapsClient.dll" />
+    <file src="C:\Code\Google\GoogleMapsClient\src\GoogleMapsClient\bin\Release\net10.0\GoogleMapsClient.xml" target="lib\net10.0\GoogleMapsClient.xml" />
+    <file src="C:\Code\Google\GoogleMapsClient\src\GoogleMapsClient\bin\Release\net462\GoogleMapsClient.dll" target="lib\net462\GoogleMapsClient.dll" />
+    <file src="C:\Code\Google\GoogleMapsClient\src\GoogleMapsClient\bin\Release\net462\GoogleMapsClient.xml" target="lib\net462\GoogleMapsClient.xml" />
+    <file src="C:\Code\Google\GoogleMapsClient\src\GoogleMapsClient\bin\Release\net472\GoogleMapsClient.dll" target="lib\net472\GoogleMapsClient.dll" />
+    <file src="C:\Code\Google\GoogleMapsClient\src\GoogleMapsClient\bin\Release\net472\GoogleMapsClient.xml" target="lib\net472\GoogleMapsClient.xml" />
+    <file src="C:\Code\Google\GoogleMapsClient\src\GoogleMapsClient\bin\Release\net48\GoogleMapsClient.dll" target="lib\net48\GoogleMapsClient.dll" />
+    <file src="C:\Code\Google\GoogleMapsClient\src\GoogleMapsClient\bin\Release\net48\GoogleMapsClient.xml" target="lib\net48\GoogleMapsClient.xml" />
+    <file src="C:\Code\Google\GoogleMapsClient\src\GoogleMapsClient\bin\Release\net8.0\GoogleMapsClient.dll" target="lib\net8.0\GoogleMapsClient.dll" />
+    <file src="C:\Code\Google\GoogleMapsClient\src\GoogleMapsClient\bin\Release\net8.0\GoogleMapsClient.xml" target="lib\net8.0\GoogleMapsClient.xml" />
+    <file src="C:\Code\Google\GoogleMapsClient\Assets\icon.png" target="\icon.png" />
+    <file src="C:\Code\Google\GoogleMapsClient\README.md" target="\README.md" />
+    <file src="C:\Code\Google\GoogleMapsClient\src\GoogleMapsClient\LICENSE.md" target="LICENSE.md" />
+  </files>
+</package>

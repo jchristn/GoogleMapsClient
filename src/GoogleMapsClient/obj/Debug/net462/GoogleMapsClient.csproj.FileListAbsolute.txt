@@ -1,5 +1,6 @@
 C:\Code\Google\GoogleMapsClient\src\GoogleMapsClient\bin\Debug\net462\GoogleMapsClient.dll
 C:\Code\Google\GoogleMapsClient\src\GoogleMapsClient\bin\Debug\net462\GoogleMapsClient.pdb
+C:\Code\Google\GoogleMapsClient\src\GoogleMapsClient\bin\Debug\net462\GoogleMapsClient.xml
 C:\Code\Google\GoogleMapsClient\src\GoogleMapsClient\bin\Debug\net462\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Code\Google\GoogleMapsClient\src\GoogleMapsClient\bin\Debug\net462\RestWrapper.dll
 C:\Code\Google\GoogleMapsClient\src\GoogleMapsClient\bin\Debug\net462\System.Buffers.dll
@@ -15,13 +16,14 @@ C:\Code\Google\GoogleMapsClient\src\GoogleMapsClient\bin\Debug\net462\System.Tex
 C:\Code\Google\GoogleMapsClient\src\GoogleMapsClient\bin\Debug\net462\System.Text.Json.dll
 C:\Code\Google\GoogleMapsClient\src\GoogleMapsClient\bin\Debug\net462\System.Threading.Tasks.Extensions.dll
 C:\Code\Google\GoogleMapsClient\src\GoogleMapsClient\bin\Debug\net462\System.ValueTuple.dll
+C:\Code\Google\GoogleMapsClient\src\GoogleMapsClient\bin\Debug\net462\Timestamps.dll
 C:\Code\Google\GoogleMapsClient\src\GoogleMapsClient\obj\Debug\net462\GoogleMapsClient.csproj.AssemblyReference.cache
 C:\Code\Google\GoogleMapsClient\src\GoogleMapsClient\obj\Debug\net462\GoogleMapsClient.GeneratedMSBuildEditorConfig.editorconfig
 C:\Code\Google\GoogleMapsClient\src\GoogleMapsClient\obj\Debug\net462\GoogleMapsClient.AssemblyInfoInputs.cache
 C:\Code\Google\GoogleMapsClient\src\GoogleMapsClient\obj\Debug\net462\GoogleMapsClient.AssemblyInfo.cs
 C:\Code\Google\GoogleMapsClient\src\GoogleMapsClient\obj\Debug\net462\GoogleMapsClient.csproj.CoreCompileInputs.cache
 C:\Code\Google\GoogleMapsClient\src\GoogleMapsClient\obj\Debug\net462\GoogleMapsClient.sourcelink.json
-C:\Code\Google\GoogleMapsClient\src\GoogleMapsClient\obj\Debug\net462\GoogleMapsClient.csproj.CopyComplete
+C:\Code\Google\GoogleMapsClient\src\GoogleMapsClient\obj\Debug\net462\GoogleMa.B353DEFF.Up2Date
 C:\Code\Google\GoogleMapsClient\src\GoogleMapsClient\obj\Debug\net462\GoogleMapsClient.dll
 C:\Code\Google\GoogleMapsClient\src\GoogleMapsClient\obj\Debug\net462\GoogleMapsClient.pdb
-C:\Code\Google\GoogleMapsClient\src\GoogleMapsClient\bin\Debug\net462\Timestamps.dll
+C:\Code\Google\GoogleMapsClient\src\GoogleMapsClient\bin\Debug\net462\System.IO.Pipelines.dll

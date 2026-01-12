@@ -1,0 +1,75 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "Test/1.0.0": {
+        "dependencies": {
+          "GoogleMapsClient": "1.1.15"
+        },
+        "runtime": {
+          "Test.dll": {}
+        }
+      },
+      "RestWrapper/3.1.8": {
+        "dependencies": {
+          "Timestamps": "1.0.11"
+        },
+        "runtime": {
+          "lib/net8.0/RestWrapper.dll": {
+            "assemblyVersion": "3.1.8.0",
+            "fileVersion": "3.1.8.0"
+          }
+        }
+      },
+      "Timestamps/1.0.11": {
+        "runtime": {
+          "lib/net8.0/Timestamps.dll": {
+            "assemblyVersion": "1.0.11.0",
+            "fileVersion": "1.0.11.0"
+          }
+        }
+      },
+      "GoogleMapsClient/1.1.15": {
+        "dependencies": {
+          "RestWrapper": "3.1.8"
+        },
+        "runtime": {
+          "GoogleMapsClient.dll": {
+            "assemblyVersion": "1.1.15.0",
+            "fileVersion": "1.1.15.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Test/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "RestWrapper/3.1.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Dz2E7QIucH33HPIj5HYrlCoI8JLBuJ/QLB7sY6kSvp+y3G6er/yJNu7SS16l7g/0H+47DT994qTTt9Gt2P1zrQ==",
+      "path": "restwrapper/3.1.8",
+      "hashPath": "restwrapper.3.1.8.nupkg.sha512"
+    },
+    "Timestamps/1.0.11": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-SnWhXm3FkEStQGgUTfWMh9mKItNW032o/v8eAtFrOGqG0/ejvPPA1LdLZx0N/qqoY0TH3x11+dO00jeVcM8xNQ==",
+      "path": "timestamps/1.0.11",
+      "hashPath": "timestamps.1.0.11.nupkg.sha512"
+    },
+    "GoogleMapsClient/1.1.15": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

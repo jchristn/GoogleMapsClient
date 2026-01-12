@@ -13,7 +13,7 @@ namespace GoogleMapsClient
     /// <summary>
     /// Google Maps client.
     /// </summary>
-    public class GoogleMaps
+    public class GoogleMaps : IDisposable
     {
         #region Public-Members
 
@@ -74,6 +74,7 @@ namespace GoogleMapsClient
         private string _BaseUrl = "https://maps.googleapis.com/maps/api/geocode/json?sensor=false&key=";
         private string _Header = "[GoogleMaps] ";
         private int _TimeoutMs = 15000;
+        private bool _Disposed = false;
 
         #endregion
 
@@ -103,6 +104,7 @@ namespace GoogleMapsClient
         /// <returns>Address details.</returns>
         public async Task<GoogleMapsAddress> QueryCoordinatesAsync(double latitude, double longitude, CancellationToken token = default)
         {
+            if (_Disposed) throw new ObjectDisposedException(nameof(GoogleMaps));
             string url = _BaseUrl + _ApiKey + "&latlng=" + latitude + "," + longitude;
             GoogleMapsResponse resp = await GetGoogleMapsResponseAsync(HttpMethod.Get, url, null, TimeoutMs, token).ConfigureAwait(false);
             if (resp != null)
@@ -124,6 +126,7 @@ namespace GoogleMapsClient
         /// <returns>Address details.</returns>
         public async Task<GoogleMapsAddress> QueryAddressAsync(string address, CancellationToken token = default)
         {
+            if (_Disposed) throw new ObjectDisposedException(nameof(GoogleMaps));
             if (String.IsNullOrEmpty(address)) throw new ArgumentNullException(nameof(address));
             string url = _BaseUrl + _ApiKey + "&address=" + WebUtility.UrlEncode(address);
             GoogleMapsResponse resp = await GetGoogleMapsResponseAsync(HttpMethod.Get, url, null, TimeoutMs, token).ConfigureAwait(false);
@@ -144,11 +147,11 @@ namespace GoogleMapsClient
         /// <param name="latitude">Latitude.</param>
         /// <param name="longitude">Longitude.</param>
         /// <param name="timestamp">Timestamp for which the local timestamp should be retrieved.</param>
-        /// <param name="timezone">Timezone string.</param>
         /// <param name="token">Cancellation token.</param>
         /// <returns>Local timestamp.</returns>
         public async Task<GoogleMapsTimestamp> LocalTimestampAsync(double latitude, double longitude, DateTime timestamp, CancellationToken token = default)
         {
+            if (_Disposed) throw new ObjectDisposedException(nameof(GoogleMaps));
             timestamp = timestamp.ToUniversalTime();
             DateTime origin = new DateTime(1970, 1, 1, 0, 0, 0, 0);
             TimeSpan diff = timestamp.ToUniversalTime() - origin;
@@ -176,6 +179,7 @@ namespace GoogleMapsClient
         /// <returns>Local timestamp.</returns>
         public async Task<GoogleMapsTimestamp> LocalTimestampAsync(string address, DateTime timestamp, CancellationToken token = default)
         {
+            if (_Disposed) throw new ObjectDisposedException(nameof(GoogleMaps));
             if (String.IsNullOrEmpty(address)) throw new ArgumentNullException(nameof(address));
             GoogleMapsAddress addr = await QueryAddressAsync(address, token).ConfigureAwait(false);
             if (addr != null)
@@ -195,7 +199,39 @@ namespace GoogleMapsClient
 
         #endregion
 
+        #region Public-Dispose-Methods
+
+        /// <summary>
+        /// Dispose of the object.
+        /// </summary>
+        public void Dispose()
+        {
+            Dispose(true);
+            GC.SuppressFinalize(this);
+        }
+
+        #endregion
+
         #region Private-Methods
+
+        /// <summary>
+        /// Dispose of the object.
+        /// </summary>
+        /// <param name="disposing">Disposing.</param>
+        protected virtual void Dispose(bool disposing)
+        {
+            if (_Disposed)
+            {
+                return;
+            }
+
+            if (disposing)
+            {
+                // Dispose managed resources here if any are added in the future
+            }
+
+            _Disposed = true;
+        }
 
         private async Task<GoogleMapsResponse> GetGoogleMapsResponseAsync(HttpMethod method, string url, string body = null, int timeoutMs = 15000, CancellationToken token = default)
         {

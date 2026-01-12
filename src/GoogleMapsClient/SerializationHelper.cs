@@ -123,9 +123,9 @@ namespace GoogleMapsClient
 
             public override void Write(Utf8JsonWriter writer, TExceptionType value, JsonSerializerOptions options)
             {
-                var serializableProperties = value.GetType()
+                IEnumerable<SerializableProperty> serializableProperties = value.GetType()
                     .GetProperties()
-                    .Select(uu => new { uu.Name, Value = uu.GetValue(value) })
+                    .Select(uu => new SerializableProperty(uu.Name, uu.GetValue(value)))
                     .Where(uu => uu.Name != nameof(Exception.TargetSite));
 
                 if (options.DefaultIgnoreCondition == JsonIgnoreCondition.WhenWritingNull)
@@ -133,7 +133,7 @@ namespace GoogleMapsClient
                     serializableProperties = serializableProperties.Where(uu => uu.Value != null);
                 }
 
-                var propList = serializableProperties.ToList();
+                List<SerializableProperty> propList = serializableProperties.ToList();
 
                 if (propList.Count == 0)
                 {
@@ -143,13 +143,25 @@ namespace GoogleMapsClient
 
                 writer.WriteStartObject();
 
-                foreach (var prop in propList)
+                foreach (SerializableProperty prop in propList)
                 {
                     writer.WritePropertyName(prop.Name);
                     JsonSerializer.Serialize(writer, prop.Value, options);
                 }
 
                 writer.WriteEndObject();
+            }
+
+            private class SerializableProperty
+            {
+                public string Name { get; }
+                public object Value { get; }
+
+                public SerializableProperty(string name, object value)
+                {
+                    Name = name;
+                    Value = value;
+                }
             }
         }
 

@@ -16,8 +16,10 @@ C:\Code\Google\GoogleMapsClient\src\Test\bin\Debug\net462\System.Text.Encodings.
 C:\Code\Google\GoogleMapsClient\src\Test\bin\Debug\net462\System.Text.Json.dll
 C:\Code\Google\GoogleMapsClient\src\Test\bin\Debug\net462\System.Threading.Tasks.Extensions.dll
 C:\Code\Google\GoogleMapsClient\src\Test\bin\Debug\net462\System.ValueTuple.dll
+C:\Code\Google\GoogleMapsClient\src\Test\bin\Debug\net462\Timestamps.dll
 C:\Code\Google\GoogleMapsClient\src\Test\bin\Debug\net462\GoogleMapsClient.dll
 C:\Code\Google\GoogleMapsClient\src\Test\bin\Debug\net462\GoogleMapsClient.pdb
+C:\Code\Google\GoogleMapsClient\src\Test\bin\Debug\net462\GoogleMapsClient.xml
 C:\Code\Google\GoogleMapsClient\src\Test\obj\Debug\net462\Test.csproj.AssemblyReference.cache
 C:\Code\Google\GoogleMapsClient\src\Test\obj\Debug\net462\Test.csproj.SuggestedBindingRedirects.cache
 C:\Code\Google\GoogleMapsClient\src\Test\obj\Debug\net462\Test.exe.config
@@ -26,7 +28,7 @@ C:\Code\Google\GoogleMapsClient\src\Test\obj\Debug\net462\Test.AssemblyInfoInput
 C:\Code\Google\GoogleMapsClient\src\Test\obj\Debug\net462\Test.AssemblyInfo.cs
 C:\Code\Google\GoogleMapsClient\src\Test\obj\Debug\net462\Test.csproj.CoreCompileInputs.cache
 C:\Code\Google\GoogleMapsClient\src\Test\obj\Debug\net462\Test.sourcelink.json
-C:\Code\Google\GoogleMapsClient\src\Test\obj\Debug\net462\Test.csproj.CopyComplete
+C:\Code\Google\GoogleMapsClient\src\Test\obj\Debug\net462\Test.csproj.Up2Date
 C:\Code\Google\GoogleMapsClient\src\Test\obj\Debug\net462\Test.exe
 C:\Code\Google\GoogleMapsClient\src\Test\obj\Debug\net462\Test.pdb
-C:\Code\Google\GoogleMapsClient\src\Test\bin\Debug\net462\Timestamps.dll
+C:\Code\Google\GoogleMapsClient\src\Test\bin\Debug\net462\System.IO.Pipelines.dll

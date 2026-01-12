@@ -1,18 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ImportGroup Condition=" '$(TargetFramework)' == 'net462' AND '$(ExcludeRestorePackageImports)' != 'true' ">
-    <Import Project="$(NuGetPackageRoot)system.text.json\8.0.0\buildTransitive\net462\System.Text.Json.targets" Condition="Exists('$(NuGetPackageRoot)system.text.json\8.0.0\buildTransitive\net462\System.Text.Json.targets')" />
+    <Import Project="$(NuGetPackageRoot)system.text.json\10.0.1\buildTransitive\net462\System.Text.Json.targets" Condition="Exists('$(NuGetPackageRoot)system.text.json\10.0.1\buildTransitive\net462\System.Text.Json.targets')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.netframework.referenceassemblies.net462\1.0.3\build\Microsoft.NETFramework.ReferenceAssemblies.net462.targets" Condition="Exists('$(NuGetPackageRoot)microsoft.netframework.referenceassemblies.net462\1.0.3\build\Microsoft.NETFramework.ReferenceAssemblies.net462.targets')" />
   </ImportGroup>
   <ImportGroup Condition=" '$(TargetFramework)' == 'net472' AND '$(ExcludeRestorePackageImports)' != 'true' ">
-    <Import Project="$(NuGetPackageRoot)system.text.json\8.0.0\buildTransitive\net462\System.Text.Json.targets" Condition="Exists('$(NuGetPackageRoot)system.text.json\8.0.0\buildTransitive\net462\System.Text.Json.targets')" />
-  </ImportGroup>
-  <ImportGroup Condition=" '$(TargetFramework)' == 'net6.0' AND '$(ExcludeRestorePackageImports)' != 'true' ">
-    <Import Project="$(NuGetPackageRoot)system.text.json\8.0.0\buildTransitive\net6.0\System.Text.Json.targets" Condition="Exists('$(NuGetPackageRoot)system.text.json\8.0.0\buildTransitive\net6.0\System.Text.Json.targets')" />
-  </ImportGroup>
-  <ImportGroup Condition=" '$(TargetFramework)' == 'net7.0' AND '$(ExcludeRestorePackageImports)' != 'true' ">
-    <Import Project="$(NuGetPackageRoot)system.text.json\8.0.0\buildTransitive\net6.0\System.Text.Json.targets" Condition="Exists('$(NuGetPackageRoot)system.text.json\8.0.0\buildTransitive\net6.0\System.Text.Json.targets')" />
+    <Import Project="$(NuGetPackageRoot)system.valuetuple\4.6.1\buildTransitive\net471\System.ValueTuple.targets" Condition="Exists('$(NuGetPackageRoot)system.valuetuple\4.6.1\buildTransitive\net471\System.ValueTuple.targets')" />
+    <Import Project="$(NuGetPackageRoot)system.text.json\10.0.1\buildTransitive\net462\System.Text.Json.targets" Condition="Exists('$(NuGetPackageRoot)system.text.json\10.0.1\buildTransitive\net462\System.Text.Json.targets')" />
   </ImportGroup>
   <ImportGroup Condition=" '$(TargetFramework)' == 'net8.0' AND '$(ExcludeRestorePackageImports)' != 'true' ">
-    <Import Project="$(NuGetPackageRoot)system.text.json\8.0.0\buildTransitive\net6.0\System.Text.Json.targets" Condition="Exists('$(NuGetPackageRoot)system.text.json\8.0.0\buildTransitive\net6.0\System.Text.Json.targets')" />
+    <Import Project="$(NuGetPackageRoot)system.text.json\10.0.1\buildTransitive\net8.0\System.Text.Json.targets" Condition="Exists('$(NuGetPackageRoot)system.text.json\10.0.1\buildTransitive\net8.0\System.Text.Json.targets')" />
   </ImportGroup>
 </Project>
