@@ -1,0 +1,17 @@
+C:\Code\Google\GoogleMapsClient\src\Test.Shared\bin\Debug\net8.0\Test.Shared.deps.json
+C:\Code\Google\GoogleMapsClient\src\Test.Shared\bin\Debug\net8.0\Test.Shared.dll
+C:\Code\Google\GoogleMapsClient\src\Test.Shared\bin\Debug\net8.0\Test.Shared.pdb
+C:\Code\Google\GoogleMapsClient\src\Test.Shared\bin\Debug\net8.0\GoogleMapsClient.dll
+C:\Code\Google\GoogleMapsClient\src\Test.Shared\bin\Debug\net8.0\GoogleMapsClient.pdb
+C:\Code\Google\GoogleMapsClient\src\Test.Shared\bin\Debug\net8.0\GoogleMapsClient.xml
+C:\Code\Google\GoogleMapsClient\src\Test.Shared\obj\Debug\net8.0\Test.Shared.csproj.AssemblyReference.cache
+C:\Code\Google\GoogleMapsClient\src\Test.Shared\obj\Debug\net8.0\Test.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Code\Google\GoogleMapsClient\src\Test.Shared\obj\Debug\net8.0\Test.Shared.AssemblyInfoInputs.cache
+C:\Code\Google\GoogleMapsClient\src\Test.Shared\obj\Debug\net8.0\Test.Shared.AssemblyInfo.cs
+C:\Code\Google\GoogleMapsClient\src\Test.Shared\obj\Debug\net8.0\Test.Shared.csproj.CoreCompileInputs.cache
+C:\Code\Google\GoogleMapsClient\src\Test.Shared\obj\Debug\net8.0\Test.Shared.sourcelink.json
+C:\Code\Google\GoogleMapsClient\src\Test.Shared\obj\Debug\net8.0\Test.Sha.2F023DF4.Up2Date
+C:\Code\Google\GoogleMapsClient\src\Test.Shared\obj\Debug\net8.0\Test.Shared.dll
+C:\Code\Google\GoogleMapsClient\src\Test.Shared\obj\Debug\net8.0\refint\Test.Shared.dll
+C:\Code\Google\GoogleMapsClient\src\Test.Shared\obj\Debug\net8.0\Test.Shared.pdb
+C:\Code\Google\GoogleMapsClient\src\Test.Shared\obj\Debug\net8.0\ref\Test.Shared.dll
