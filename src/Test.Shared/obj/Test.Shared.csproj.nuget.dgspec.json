@@ -80,11 +80,11 @@
           "dependencies": {
             "RestWrapper": {
               "target": "Package",
-              "version": "[3.1.8, )"
+              "version": "[3.2.0, )"
             },
             "System.Text.Json": {
               "target": "Package",
-              "version": "[10.0.1, )"
+              "version": "[10.0.11, )"
             }
           },
           "imports": [
@@ -391,11 +391,11 @@
             },
             "RestWrapper": {
               "target": "Package",
-              "version": "[3.1.8, )"
+              "version": "[3.2.0, )"
             },
             "System.Text.Json": {
               "target": "Package",
-              "version": "[10.0.1, )"
+              "version": "[10.0.11, )"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.302\\RuntimeIdentifierGraph.json"
@@ -406,11 +406,11 @@
           "dependencies": {
             "RestWrapper": {
               "target": "Package",
-              "version": "[3.1.8, )"
+              "version": "[3.2.0, )"
             },
             "System.Text.Json": {
               "target": "Package",
-              "version": "[10.0.1, )"
+              "version": "[10.0.11, )"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.302\\RuntimeIdentifierGraph.json"
@@ -421,11 +421,11 @@
           "dependencies": {
             "RestWrapper": {
               "target": "Package",
-              "version": "[3.1.8, )"
+              "version": "[3.2.0, )"
             },
             "System.Text.Json": {
               "target": "Package",
-              "version": "[10.0.1, )"
+              "version": "[10.0.11, )"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.302\\RuntimeIdentifierGraph.json"
@@ -436,11 +436,11 @@
           "dependencies": {
             "RestWrapper": {
               "target": "Package",
-              "version": "[3.1.8, )"
+              "version": "[3.2.0, )"
             },
             "System.Text.Json": {
               "target": "Package",
-              "version": "[10.0.1, )"
+              "version": "[10.0.11, )"
             }
           },
           "imports": [

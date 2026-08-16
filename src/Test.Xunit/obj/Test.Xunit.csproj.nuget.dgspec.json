@@ -80,11 +80,11 @@
           "dependencies": {
             "RestWrapper": {
               "target": "Package",
-              "version": "[3.1.8, )"
+              "version": "[3.2.0, )"
             },
             "System.Text.Json": {
               "target": "Package",
-              "version": "[10.0.1, )"
+              "version": "[10.0.11, )"
             }
           },
           "imports": [
@@ -391,11 +391,11 @@
             },
             "RestWrapper": {
               "target": "Package",
-              "version": "[3.1.8, )"
+              "version": "[3.2.0, )"
             },
             "System.Text.Json": {
               "target": "Package",
-              "version": "[10.0.1, )"
+              "version": "[10.0.11, )"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.302\\RuntimeIdentifierGraph.json"
@@ -406,11 +406,11 @@
           "dependencies": {
             "RestWrapper": {
               "target": "Package",
-              "version": "[3.1.8, )"
+              "version": "[3.2.0, )"
             },
             "System.Text.Json": {
               "target": "Package",
-              "version": "[10.0.1, )"
+              "version": "[10.0.11, )"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.302\\RuntimeIdentifierGraph.json"
@@ -421,11 +421,11 @@
           "dependencies": {
             "RestWrapper": {
               "target": "Package",
-              "version": "[3.1.8, )"
+              "version": "[3.2.0, )"
             },
             "System.Text.Json": {
               "target": "Package",
-              "version": "[10.0.1, )"
+              "version": "[10.0.11, )"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.302\\RuntimeIdentifierGraph.json"
@@ -436,11 +436,11 @@
           "dependencies": {
             "RestWrapper": {
               "target": "Package",
-              "version": "[3.1.8, )"
+              "version": "[3.2.0, )"
             },
             "System.Text.Json": {
               "target": "Package",
-              "version": "[10.0.1, )"
+              "version": "[10.0.11, )"
             }
           },
           "imports": [
@@ -1511,7 +1511,7 @@
           "dependencies": {
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
-              "version": "[17.14.1, )"
+              "version": "[18.9.0, )"
             },
             "Touchstone.XunitAdapter": {
               "target": "Package",
@@ -1519,7 +1519,7 @@
             },
             "coverlet.collector": {
               "target": "Package",
-              "version": "[6.0.4, )"
+              "version": "[10.0.1, )"
             },
             "xunit": {
               "target": "Package",
@@ -1527,7 +1527,7 @@
             },
             "xunit.runner.visualstudio": {
               "target": "Package",
-              "version": "[3.1.4, )"
+              "version": "[4.0.0, )"
             }
           },
           "imports": [
@@ -1828,7 +1828,7 @@
           "dependencies": {
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
-              "version": "[17.14.1, )"
+              "version": "[18.9.0, )"
             },
             "Touchstone.XunitAdapter": {
               "target": "Package",
@@ -1836,7 +1836,7 @@
             },
             "coverlet.collector": {
               "target": "Package",
-              "version": "[6.0.4, )"
+              "version": "[10.0.1, )"
             },
             "xunit": {
               "target": "Package",
@@ -1844,7 +1844,7 @@
             },
             "xunit.runner.visualstudio": {
               "target": "Package",
-              "version": "[3.1.4, )"
+              "version": "[4.0.0, )"
             }
           },
           "imports": [

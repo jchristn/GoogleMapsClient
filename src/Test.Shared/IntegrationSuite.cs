@@ -123,6 +123,62 @@ namespace Test.Shared
 
                             Verify.IsTrue(logs.Count > 0, "Expected the logger to be invoked at least once.");
                         }),
+
+                    new TestCaseDescriptor(suite, "AddressQueryUrlEncodesSpecialCharacters",
+                        "QueryAddressAsync URL-encodes reserved characters in the address before sending",
+                        async ct =>
+                        {
+                            using (MockHttpServer server = new MockHttpServer(Fixtures.GeocodeOk))
+                            using (GoogleMaps client = new GoogleMaps("k") { BaseUrl = server.BaseUrl })
+                            {
+                                await client.QueryAddressAsync("A & B Street, Zürich", ct);
+
+                                // The raw ampersand must not leak into the query string (it would be parsed
+                                // as a parameter separator); it must appear percent-encoded instead.
+                                Verify.IsTrue(server.LastRequestLine.Contains("%26"),
+                                    "Ampersand should be percent-encoded to %26. Actual: " + server.LastRequestLine);
+                                Verify.IsFalse(server.LastRequestLine.Contains("A & B"),
+                                    "The unencoded address should not appear in the request line. Actual: " + server.LastRequestLine);
+                            }
+                        }),
+
+                    new TestCaseDescriptor(suite, "MalformedJsonBodyThrows",
+                        "A malformed JSON response body surfaces as a JsonException rather than being swallowed",
+                        async ct =>
+                        {
+                            using (MockHttpServer server = new MockHttpServer("{ this is not valid json "))
+                            using (GoogleMaps client = new GoogleMaps("k") { BaseUrl = server.BaseUrl })
+                            {
+                                await Verify.ThrowsAsync<System.Text.Json.JsonException>(
+                                    () => client.QueryCoordinatesAsync(1.0, 2.0, ct));
+                            }
+                        }),
+
+                    new TestCaseDescriptor(suite, "QueryCoordinatesHonorsCancelledToken",
+                        "QueryCoordinatesAsync throws when handed an already-cancelled token",
+                        async ct =>
+                        {
+                            using (GoogleMaps client = new GoogleMaps("k"))
+                            using (System.Threading.CancellationTokenSource cts = new System.Threading.CancellationTokenSource())
+                            {
+                                cts.Cancel();
+                                await Verify.ThrowsAsync<OperationCanceledException>(
+                                    () => client.QueryCoordinatesAsync(1.0, 2.0, cts.Token));
+                            }
+                        }),
+
+                    new TestCaseDescriptor(suite, "QueryAddressHonorsCancelledToken",
+                        "QueryAddressAsync throws when handed an already-cancelled token",
+                        async ct =>
+                        {
+                            using (GoogleMaps client = new GoogleMaps("k"))
+                            using (System.Threading.CancellationTokenSource cts = new System.Threading.CancellationTokenSource())
+                            {
+                                cts.Cancel();
+                                await Verify.ThrowsAsync<OperationCanceledException>(
+                                    () => client.QueryAddressAsync("1600 Amphitheatre Parkway", cts.Token));
+                            }
+                        }),
                 });
         }
     }

@@ -2,18 +2,18 @@
   "version": 4,
   "targets": {
     "net10.0": {
-      "RestWrapper/3.1.8": {
+      "RestWrapper/3.2.0": {
         "type": "package",
         "dependencies": {
           "Timestamps": "1.0.11"
         },
         "compile": {
-          "lib/net8.0/RestWrapper.dll": {
+          "lib/net10.0/RestWrapper.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0/RestWrapper.dll": {
+          "lib/net10.0/RestWrapper.dll": {
             "related": ".xml"
           }
         }
@@ -55,7 +55,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
         "dependencies": {
-          "RestWrapper": "3.1.8"
+          "RestWrapper": "3.2.0"
         },
         "compile": {
           "bin/placeholder/GoogleMapsClient.dll": {}
@@ -66,7 +66,7 @@
       }
     },
     "net8.0": {
-      "RestWrapper/3.1.8": {
+      "RestWrapper/3.2.0": {
         "type": "package",
         "dependencies": {
           "Timestamps": "1.0.11"
@@ -82,7 +82,7 @@
           }
         }
       },
-      "System.IO.Pipelines/10.0.1": {
+      "System.IO.Pipelines/10.0.11": {
         "type": "package",
         "compile": {
           "lib/net8.0/System.IO.Pipelines.dll": {
@@ -98,7 +98,7 @@
           "buildTransitive/net8.0/_._": {}
         }
       },
-      "System.Text.Encodings.Web/10.0.1": {
+      "System.Text.Encodings.Web/10.0.11": {
         "type": "package",
         "compile": {
           "lib/net8.0/System.Text.Encodings.Web.dll": {
@@ -120,11 +120,11 @@
           }
         }
       },
-      "System.Text.Json/10.0.1": {
+      "System.Text.Json/10.0.11": {
         "type": "package",
         "dependencies": {
-          "System.IO.Pipelines": "10.0.1",
-          "System.Text.Encodings.Web": "10.0.1"
+          "System.IO.Pipelines": "10.0.11",
+          "System.Text.Encodings.Web": "10.0.11"
         },
         "compile": {
           "lib/net8.0/System.Text.Json.dll": {
@@ -177,8 +177,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "RestWrapper": "3.1.8",
-          "System.Text.Json": "10.0.1"
+          "RestWrapper": "3.2.0",
+          "System.Text.Json": "10.0.11"
         },
         "compile": {
           "bin/placeholder/GoogleMapsClient.dll": {}
@@ -190,16 +190,18 @@
     }
   },
   "libraries": {
-    "RestWrapper/3.1.8": {
-      "sha512": "Dz2E7QIucH33HPIj5HYrlCoI8JLBuJ/QLB7sY6kSvp+y3G6er/yJNu7SS16l7g/0H+47DT994qTTt9Gt2P1zrQ==",
+    "RestWrapper/3.2.0": {
+      "sha512": "tnA1urNAYOZQn8fwboa86cBGhieRh0HICdgWbqa4YrBT1uRXJNoZk28fGkOxt4dZV8mMo0FmteQRO3wCj4KAgw==",
       "type": "package",
-      "path": "restwrapper/3.1.8",
+      "path": "restwrapper/3.2.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.md",
         "README.md",
         "icon.png",
+        "lib/net10.0/RestWrapper.dll",
+        "lib/net10.0/RestWrapper.xml",
         "lib/net462/RestWrapper.dll",
         "lib/net462/RestWrapper.xml",
         "lib/net48/RestWrapper.dll",
@@ -212,14 +214,14 @@
         "lib/netstandard2.0/RestWrapper.xml",
         "lib/netstandard2.1/RestWrapper.dll",
         "lib/netstandard2.1/RestWrapper.xml",
-        "restwrapper.3.1.8.nupkg.sha512",
+        "restwrapper.3.2.0.nupkg.sha512",
         "restwrapper.nuspec"
       ]
     },
-    "System.IO.Pipelines/10.0.1": {
-      "sha512": "26LbFXHKd7PmRnWlkjnYgmjd5B6HYVG+1MpTO25BdxTJnx6D0O16JPAC/S4YBqjtt4YpfGj1QO/Ss6SPMGEGQw==",
+    "System.IO.Pipelines/10.0.11": {
+      "sha512": "rg8LPOZ62quw3aTnsQNh9rssncaMs69WEM1DiJdDkV+o4Llb2s5Pasy5Bulfm8zL+pE4gDcSQo7V2zW2jvxwYg==",
       "type": "package",
-      "path": "system.io.pipelines/10.0.1",
+      "path": "system.io.pipelines/10.0.11",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -240,15 +242,15 @@
         "lib/net9.0/System.IO.Pipelines.xml",
         "lib/netstandard2.0/System.IO.Pipelines.dll",
         "lib/netstandard2.0/System.IO.Pipelines.xml",
-        "system.io.pipelines.10.0.1.nupkg.sha512",
+        "system.io.pipelines.10.0.11.nupkg.sha512",
         "system.io.pipelines.nuspec",
         "useSharedDesignerContext.txt"
       ]
     },
-    "System.Text.Encodings.Web/10.0.1": {
-      "sha512": "cVAka0o1rJJ5/De0pjNs7jcaZk5hUGf1HGzUyVmE2MEB1Vf0h/8qsWxImk1zjitCbeD2Avaq2P2+usdvqgbeVQ==",
+    "System.Text.Encodings.Web/10.0.11": {
+      "sha512": "R7H2/Oqr3onFff/JKDpfRjwxcQZlocF/eQ0ce8go/OTjqz+6LEp/fZK8j1YnDobtysChATEg7krVq4hQJ3IoeQ==",
       "type": "package",
-      "path": "system.text.encodings.web/10.0.1",
+      "path": "system.text.encodings.web/10.0.11",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -277,15 +279,15 @@
         "runtimes/wasi/lib/net10.0/System.Text.Encodings.Web.xml",
         "runtimes/win/lib/net9.0/System.Text.Encodings.Web.dll",
         "runtimes/win/lib/net9.0/System.Text.Encodings.Web.xml",
-        "system.text.encodings.web.10.0.1.nupkg.sha512",
+        "system.text.encodings.web.10.0.11.nupkg.sha512",
         "system.text.encodings.web.nuspec",
         "useSharedDesignerContext.txt"
       ]
     },
-    "System.Text.Json/10.0.1": {
-      "sha512": "EsgwDgU1PFqhrFA9l5n+RBu76wFhNGCEwu8ITrBNhjPP3MxLyklroU5GIF8o6JYpYg6T4KD/VICfMdgPAvNp5g==",
+    "System.Text.Json/10.0.11": {
+      "sha512": "X2rXQy7g8KEUvWVbAz6vOk6byI1eMgmzFeXbKxq4BfZCfFy5S91K+K+hd4ZBlSp0wL1Y8FyGRXs6+hvABTjwQw==",
       "type": "package",
-      "path": "system.text.json/10.0.1",
+      "path": "system.text.json/10.0.11",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -349,7 +351,7 @@
         "lib/net9.0/System.Text.Json.xml",
         "lib/netstandard2.0/System.Text.Json.dll",
         "lib/netstandard2.0/System.Text.Json.xml",
-        "system.text.json.10.0.1.nupkg.sha512",
+        "system.text.json.10.0.11.nupkg.sha512",
         "system.text.json.nuspec",
         "useSharedDesignerContext.txt"
       ]

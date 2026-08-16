@@ -8,7 +8,7 @@
     ".NETCoreApp,Version=v8.0": {
       "Test.Xunit/1.0.0": {
         "dependencies": {
-          "Microsoft.NET.Test.Sdk": "17.14.1",
+          "Microsoft.NET.Test.Sdk": "18.9.0",
           "Test.Shared": "1.0.0",
           "Touchstone.XunitAdapter": "0.1.12",
           "xunit": "2.9.3"
@@ -17,33 +17,33 @@
           "Test.Xunit.dll": {}
         }
       },
-      "Microsoft.CodeCoverage/17.14.1": {
+      "Microsoft.CodeCoverage/18.9.0": {
         "runtime": {
           "lib/net8.0/Microsoft.VisualStudio.CodeCoverage.Shim.dll": {
             "assemblyVersion": "15.0.0.0",
-            "fileVersion": "17.1400.225.12603"
+            "fileVersion": "18.900.26.32603"
           }
         }
       },
-      "Microsoft.NET.Test.Sdk/17.14.1": {
+      "Microsoft.NET.Test.Sdk/18.9.0": {
         "dependencies": {
-          "Microsoft.CodeCoverage": "17.14.1",
-          "Microsoft.TestPlatform.TestHost": "17.14.1"
+          "Microsoft.CodeCoverage": "18.9.0",
+          "Microsoft.TestPlatform.TestHost": "18.9.0"
         }
       },
-      "Microsoft.TestPlatform.ObjectModel/17.14.1": {
+      "Microsoft.TestPlatform.ObjectModel/18.9.0": {
         "runtime": {
           "lib/net8.0/Microsoft.TestPlatform.CoreUtilities.dll": {
             "assemblyVersion": "15.0.0.0",
-            "fileVersion": "17.1400.125.30202"
+            "fileVersion": "18.900.26.41304"
           },
           "lib/net8.0/Microsoft.TestPlatform.PlatformAbstractions.dll": {
             "assemblyVersion": "15.0.0.0",
-            "fileVersion": "17.1400.125.30202"
+            "fileVersion": "18.900.26.41304"
           },
           "lib/net8.0/Microsoft.VisualStudio.TestPlatform.ObjectModel.dll": {
             "assemblyVersion": "15.0.0.0",
-            "fileVersion": "17.1400.125.30202"
+            "fileVersion": "18.900.26.41304"
           }
         },
         "resources": {
@@ -127,31 +127,30 @@
           }
         }
       },
-      "Microsoft.TestPlatform.TestHost/17.14.1": {
+      "Microsoft.TestPlatform.TestHost/18.9.0": {
         "dependencies": {
-          "Microsoft.TestPlatform.ObjectModel": "17.14.1",
-          "Newtonsoft.Json": "13.0.3"
+          "Microsoft.TestPlatform.ObjectModel": "18.9.0"
         },
         "runtime": {
           "lib/net8.0/Microsoft.TestPlatform.CommunicationUtilities.dll": {
             "assemblyVersion": "15.0.0.0",
-            "fileVersion": "17.1400.125.30202"
+            "fileVersion": "18.900.26.41304"
           },
           "lib/net8.0/Microsoft.TestPlatform.CrossPlatEngine.dll": {
             "assemblyVersion": "15.0.0.0",
-            "fileVersion": "17.1400.125.30202"
+            "fileVersion": "18.900.26.41304"
           },
           "lib/net8.0/Microsoft.TestPlatform.Utilities.dll": {
             "assemblyVersion": "15.0.0.0",
-            "fileVersion": "17.1400.125.30202"
+            "fileVersion": "18.900.26.41304"
           },
           "lib/net8.0/Microsoft.VisualStudio.TestPlatform.Common.dll": {
             "assemblyVersion": "15.0.0.0",
-            "fileVersion": "17.1400.125.30202"
+            "fileVersion": "18.900.26.41304"
           },
           "lib/net8.0/testhost.dll": {
             "assemblyVersion": "15.0.0.0",
-            "fileVersion": "17.1400.125.30202"
+            "fileVersion": "18.900.26.41304"
           }
         },
         "resources": {
@@ -274,38 +273,30 @@
           }
         }
       },
-      "Newtonsoft.Json/13.0.3": {
-        "runtime": {
-          "lib/net6.0/Newtonsoft.Json.dll": {
-            "assemblyVersion": "13.0.0.0",
-            "fileVersion": "13.0.3.27908"
-          }
-        }
-      },
-      "RestWrapper/3.1.8": {
+      "RestWrapper/3.2.0": {
         "dependencies": {
           "Timestamps": "1.0.11"
         },
         "runtime": {
           "lib/net8.0/RestWrapper.dll": {
-            "assemblyVersion": "3.1.8.0",
-            "fileVersion": "3.1.8.0"
+            "assemblyVersion": "3.2.0.0",
+            "fileVersion": "3.2.0.0"
           }
         }
       },
-      "System.IO.Pipelines/10.0.1": {
+      "System.IO.Pipelines/10.0.11": {
         "runtime": {
           "lib/net8.0/System.IO.Pipelines.dll": {
             "assemblyVersion": "10.0.0.0",
-            "fileVersion": "10.0.125.57005"
+            "fileVersion": "10.0.1126.37416"
           }
         }
       },
-      "System.Text.Encodings.Web/10.0.1": {
+      "System.Text.Encodings.Web/10.0.11": {
         "runtime": {
           "lib/net8.0/System.Text.Encodings.Web.dll": {
             "assemblyVersion": "10.0.0.0",
-            "fileVersion": "10.0.125.57005"
+            "fileVersion": "10.0.1126.37416"
           }
         },
         "runtimeTargets": {
@@ -313,19 +304,19 @@
             "rid": "browser",
             "assetType": "runtime",
             "assemblyVersion": "10.0.0.0",
-            "fileVersion": "10.0.125.57005"
+            "fileVersion": "10.0.1126.37416"
           }
         }
       },
-      "System.Text.Json/10.0.1": {
+      "System.Text.Json/10.0.11": {
         "dependencies": {
-          "System.IO.Pipelines": "10.0.1",
-          "System.Text.Encodings.Web": "10.0.1"
+          "System.IO.Pipelines": "10.0.11",
+          "System.Text.Encodings.Web": "10.0.11"
         },
         "runtime": {
           "lib/net8.0/System.Text.Json.dll": {
             "assemblyVersion": "10.0.0.0",
-            "fileVersion": "10.0.125.57005"
+            "fileVersion": "10.0.1126.37416"
           }
         }
       },
@@ -409,8 +400,8 @@
       },
       "GoogleMapsClient/1.1.15": {
         "dependencies": {
-          "RestWrapper": "3.1.8",
-          "System.Text.Json": "10.0.1"
+          "RestWrapper": "3.2.0",
+          "System.Text.Json": "10.0.11"
         },
         "runtime": {
           "GoogleMapsClient.dll": {
@@ -439,68 +430,61 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Microsoft.CodeCoverage/17.14.1": {
+    "Microsoft.CodeCoverage/18.9.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-pmTrhfFIoplzFVbhVwUquT+77CbGH+h4/3mBpdmIlYtBi9nAB+kKI6dN3A/nV4DFi3wLLx/BlHIPK+MkbQ6Tpg==",
-      "path": "microsoft.codecoverage/17.14.1",
-      "hashPath": "microsoft.codecoverage.17.14.1.nupkg.sha512"
+      "sha512": "sha512-MtegCIKGuG0r/LCdIjoR1HgzCGIUBhR3aNdbtQpts5vMXQuqBDZ2Jsd2uFKoHFM2XrQV6ZrDf3F5oLi3SLTp8w==",
+      "path": "microsoft.codecoverage/18.9.0",
+      "hashPath": "microsoft.codecoverage.18.9.0.nupkg.sha512"
     },
-    "Microsoft.NET.Test.Sdk/17.14.1": {
+    "Microsoft.NET.Test.Sdk/18.9.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-HJKqKOE+vshXra2aEHpi2TlxYX7Z9VFYkr+E5rwEvHC8eIXiyO+K9kNm8vmNom3e2rA56WqxU+/N9NJlLGXsJQ==",
-      "path": "microsoft.net.test.sdk/17.14.1",
-      "hashPath": "microsoft.net.test.sdk.17.14.1.nupkg.sha512"
+      "sha512": "sha512-xIzVXa/VpKXqDWzyC/5Hw8JbFY5u9k3Jc53CpcjBiOXvkQGio484LD9FNwOiGUSMDcYL3Rcw9sNgGi5WrswlPQ==",
+      "path": "microsoft.net.test.sdk/18.9.0",
+      "hashPath": "microsoft.net.test.sdk.18.9.0.nupkg.sha512"
     },
-    "Microsoft.TestPlatform.ObjectModel/17.14.1": {
+    "Microsoft.TestPlatform.ObjectModel/18.9.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-xTP1W6Mi6SWmuxd3a+jj9G9UoC850WGwZUps1Wah9r1ZxgXhdJfj1QqDLJkFjHDCvN42qDL2Ps5KjQYWUU0zcQ==",
-      "path": "microsoft.testplatform.objectmodel/17.14.1",
-      "hashPath": "microsoft.testplatform.objectmodel.17.14.1.nupkg.sha512"
+      "sha512": "sha512-Fz/qXC52VXXopzHj7v2reCKcCqSxkTDCkEDfkNAH0vni/7qK/KLMiEYtRmnUanxO2F2g2zZZ60qCpxF0AF7URA==",
+      "path": "microsoft.testplatform.objectmodel/18.9.0",
+      "hashPath": "microsoft.testplatform.objectmodel.18.9.0.nupkg.sha512"
     },
-    "Microsoft.TestPlatform.TestHost/17.14.1": {
+    "Microsoft.TestPlatform.TestHost/18.9.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-d78LPzGKkJwsJXAQwsbJJ7LE7D1wB+rAyhHHAaODF+RDSQ0NgMjDFkSA1Djw18VrxO76GlKAjRUhl+H8NL8Z+Q==",
-      "path": "microsoft.testplatform.testhost/17.14.1",
-      "hashPath": "microsoft.testplatform.testhost.17.14.1.nupkg.sha512"
+      "sha512": "sha512-Oq+Pma/J86aZL72t71bcESvDszDsTjUfl6PIsuDdPoKTHZfNMhKamCfLD5fKx51W/u0KozXtJo2/3fnt0sgPxg==",
+      "path": "microsoft.testplatform.testhost/18.9.0",
+      "hashPath": "microsoft.testplatform.testhost.18.9.0.nupkg.sha512"
     },
-    "Newtonsoft.Json/13.0.3": {
+    "RestWrapper/3.2.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-HrC5BXdl00IP9zeV+0Z848QWPAoCr9P3bDEZguI+gkLcBKAOxix/tLEAAHC+UvDNPv4a2d18lOReHMOagPa+zQ==",
-      "path": "newtonsoft.json/13.0.3",
-      "hashPath": "newtonsoft.json.13.0.3.nupkg.sha512"
+      "sha512": "sha512-tnA1urNAYOZQn8fwboa86cBGhieRh0HICdgWbqa4YrBT1uRXJNoZk28fGkOxt4dZV8mMo0FmteQRO3wCj4KAgw==",
+      "path": "restwrapper/3.2.0",
+      "hashPath": "restwrapper.3.2.0.nupkg.sha512"
     },
-    "RestWrapper/3.1.8": {
+    "System.IO.Pipelines/10.0.11": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Dz2E7QIucH33HPIj5HYrlCoI8JLBuJ/QLB7sY6kSvp+y3G6er/yJNu7SS16l7g/0H+47DT994qTTt9Gt2P1zrQ==",
-      "path": "restwrapper/3.1.8",
-      "hashPath": "restwrapper.3.1.8.nupkg.sha512"
+      "sha512": "sha512-rg8LPOZ62quw3aTnsQNh9rssncaMs69WEM1DiJdDkV+o4Llb2s5Pasy5Bulfm8zL+pE4gDcSQo7V2zW2jvxwYg==",
+      "path": "system.io.pipelines/10.0.11",
+      "hashPath": "system.io.pipelines.10.0.11.nupkg.sha512"
     },
-    "System.IO.Pipelines/10.0.1": {
+    "System.Text.Encodings.Web/10.0.11": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-26LbFXHKd7PmRnWlkjnYgmjd5B6HYVG+1MpTO25BdxTJnx6D0O16JPAC/S4YBqjtt4YpfGj1QO/Ss6SPMGEGQw==",
-      "path": "system.io.pipelines/10.0.1",
-      "hashPath": "system.io.pipelines.10.0.1.nupkg.sha512"
+      "sha512": "sha512-R7H2/Oqr3onFff/JKDpfRjwxcQZlocF/eQ0ce8go/OTjqz+6LEp/fZK8j1YnDobtysChATEg7krVq4hQJ3IoeQ==",
+      "path": "system.text.encodings.web/10.0.11",
+      "hashPath": "system.text.encodings.web.10.0.11.nupkg.sha512"
     },
-    "System.Text.Encodings.Web/10.0.1": {
+    "System.Text.Json/10.0.11": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-cVAka0o1rJJ5/De0pjNs7jcaZk5hUGf1HGzUyVmE2MEB1Vf0h/8qsWxImk1zjitCbeD2Avaq2P2+usdvqgbeVQ==",
-      "path": "system.text.encodings.web/10.0.1",
-      "hashPath": "system.text.encodings.web.10.0.1.nupkg.sha512"
-    },
-    "System.Text.Json/10.0.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-EsgwDgU1PFqhrFA9l5n+RBu76wFhNGCEwu8ITrBNhjPP3MxLyklroU5GIF8o6JYpYg6T4KD/VICfMdgPAvNp5g==",
-      "path": "system.text.json/10.0.1",
-      "hashPath": "system.text.json.10.0.1.nupkg.sha512"
+      "sha512": "sha512-X2rXQy7g8KEUvWVbAz6vOk6byI1eMgmzFeXbKxq4BfZCfFy5S91K+K+hd4ZBlSp0wL1Y8FyGRXs6+hvABTjwQw==",
+      "path": "system.text.json/10.0.11",
+      "hashPath": "system.text.json.10.0.11.nupkg.sha512"
     },
     "Timestamps/1.0.11": {
       "type": "package",

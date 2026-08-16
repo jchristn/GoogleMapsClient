@@ -8,20 +8,20 @@
     ".NETCoreApp,Version=v10.0": {
       "GoogleMapsClient/1.1.15": {
         "dependencies": {
-          "RestWrapper": "3.1.8"
+          "RestWrapper": "3.2.0"
         },
         "runtime": {
           "GoogleMapsClient.dll": {}
         }
       },
-      "RestWrapper/3.1.8": {
+      "RestWrapper/3.2.0": {
         "dependencies": {
           "Timestamps": "1.0.11"
         },
         "runtime": {
-          "lib/net8.0/RestWrapper.dll": {
-            "assemblyVersion": "3.1.8.0",
-            "fileVersion": "3.1.8.0"
+          "lib/net10.0/RestWrapper.dll": {
+            "assemblyVersion": "3.2.0.0",
+            "fileVersion": "3.2.0.0"
           }
         }
       },
@@ -41,12 +41,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "RestWrapper/3.1.8": {
+    "RestWrapper/3.2.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Dz2E7QIucH33HPIj5HYrlCoI8JLBuJ/QLB7sY6kSvp+y3G6er/yJNu7SS16l7g/0H+47DT994qTTt9Gt2P1zrQ==",
-      "path": "restwrapper/3.1.8",
-      "hashPath": "restwrapper.3.1.8.nupkg.sha512"
+      "sha512": "sha512-tnA1urNAYOZQn8fwboa86cBGhieRh0HICdgWbqa4YrBT1uRXJNoZk28fGkOxt4dZV8mMo0FmteQRO3wCj4KAgw==",
+      "path": "restwrapper/3.2.0",
+      "hashPath": "restwrapper.3.2.0.nupkg.sha512"
     },
     "Timestamps/1.0.11": {
       "type": "package",

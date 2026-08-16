@@ -40,8 +40,8 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="RestWrapper" Version="3.1.8" />
-		<PackageReference Include="System.Text.Json" Version="10.0.1" />
+		<PackageReference Include="RestWrapper" Version="3.2.0" />
+		<PackageReference Include="System.Text.Json" Version="10.0.11" />
 	</ItemGroup>
 
 </Project>
